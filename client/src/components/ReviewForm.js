@@ -9,6 +9,7 @@ const ReviewForm = () => {
   const token = getTokenFromLocalStorage()
 
   const [ formData, setFormData ] = useState({
+    title: '',
     spoiler: false,
     book_rating: '',
     movie_rating: '',
@@ -17,6 +18,7 @@ const ReviewForm = () => {
   })
 
   const [ errors, setErrors ] = useState({
+    title: '',
     spoiler: false,
     book_rating: '',
     movie_rating: '',
@@ -76,12 +78,22 @@ const ReviewForm = () => {
               <div className="row">
                 <form className="review-form col-10 offset-1 mt-4 col-md-10 offset-md-3" onSubmit={handleSubmit}>
                   <div className="form-field">
+                    <div className="control">
+                      <select name="title" onChange={handleChange} value={formData.title}>
+                        <option value="" disabled></option>
+                        <option value="3">The Shining</option>
+                        {/* <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option> */}
+                      </select>
+                    </div>
                     {/* <label className="review-label"><h3>Your Review</h3></label> */}
                     <div className="control">
                       <input name="checkbox" type='checkbox' onChange={handleChange} value={formData.spoiler} />
                     </div>
                     <div className="control">
-                      <select name="bookRating" onChange={handleChange} value={formData.book_rating}>
+                      <select name="book_rating" onChange={handleChange} value={formData.book_rating}>
                         <option value="" disabled></option>
                         <option value="1">1</option>
                         <option value="2">2</option>
@@ -91,7 +103,7 @@ const ReviewForm = () => {
                       </select>
                     </div>
                     <div className="control">
-                      <select name="movieRating" onChange={handleChange} value={formData.movie_rating}>
+                      <select name="movie_rating" onChange={handleChange} value={formData.movie_rating}>
                         <option value="" disabled></option>
                         <option value="1">1</option>
                         <option value="2">2</option>

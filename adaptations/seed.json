@@ -1,0 +1,730 @@
+[
+{
+  "model": "adaptations.adaptation",
+  "pk": 3,
+  "fields": {
+    "name": "The Shining",
+    "synopsis": "Jack and his family move into an isolated hotel with a violent past. Living in isolation, Jack begins to lose his sanity, which affects his family members.",
+    "author": "Stephen King",
+    "book_release_year": 1977,
+    "book_image": "https://i.imgur.com/pHvGp2x.jpg",
+    "director": "Stanley Kubrick",
+    "movie_release_year": 1980,
+    "movie_image": "https://i.imgur.com/PMpKLgq.jpg",
+    "book_link": "https://www.goodreads.com/book/show/11588.The_Shining",
+    "movie_link": "https://letterboxd.com/film/the-shining/",
+    "genres": [
+      10,
+      3,
+      4
+    ]
+  }
+},
+{
+  "model": "adaptations.adaptation",
+  "pk": 4,
+  "fields": {
+    "name": "The Graduate",
+    "synopsis": "While he is lured into a seductive affair with the wife of his father's business partner, college graduate Benjamin also falls in love with her daughter, Elaine.",
+    "author": "Charles Webb",
+    "book_release_year": 1963,
+    "book_image": "https://i.imgur.com/82kuwJS.jpg",
+    "director": "Mike Nichols",
+    "movie_release_year": 1968,
+    "movie_image": "https://i.imgur.com/zkp6VMB.jpg",
+    "book_link": "https://www.goodreads.com/book/show/71047.The_Graduate",
+    "movie_link": "https://letterboxd.com/film/the-graduate/",
+    "genres": [
+      2,
+      5,
+      6
+    ]
+  }
+},
+{
+  "model": "adaptations.adaptation",
+  "pk": 5,
+  "fields": {
+    "name": "Trainspotting",
+    "synopsis": "Renton is a drug addict who tries to mend his ways by moving to London and starting life afresh. He, however, is pulled back into the world of addiction by his friends.",
+    "author": "Irvin Welsh",
+    "book_release_year": 1993,
+    "book_image": "https://i.imgur.com/p58OFkS.jpg",
+    "director": "Danny Boyle",
+    "movie_release_year": 1996,
+    "movie_image": "https://i.imgur.com/ICygP97.jpg",
+    "book_link": "https://www.goodreads.com/book/show/135836.Trainspotting",
+    "movie_link": "https://letterboxd.com/film/trainspotting/",
+    "genres": [
+      2,
+      5,
+      7
+    ]
+  }
+},
+{
+  "model": "adaptations.adaptation",
+  "pk": 6,
+  "fields": {
+    "name": "A Clockwork Orange",
+    "synopsis": "Alex, a psychopathic delinquent, is imprisoned for murder. In order to reduce his sentence, he volunteers for an experimental therapy conducted by the government, but it goes askew.",
+    "author": "Anthony Burgess",
+    "book_release_year": 1943,
+    "book_image": "https://i.imgur.com/1KZbo05.jpg",
+    "director": "Stanley Kubrick",
+    "movie_release_year": 1971,
+    "movie_image": "https://i.imgur.com/BU9o6Xt.jpg",
+    "book_link": "https://www.goodreads.com/book/show/41817486-a-clockwork-orange",
+    "movie_link": "https://letterboxd.com/film/a-clockwork-orange/",
+    "genres": [
+      8,
+      7
+    ]
+  }
+},
+{
+  "model": "adaptations.adaptation",
+  "pk": 7,
+  "fields": {
+    "name": "Pride and Prejudice",
+    "synopsis": "Mrs Bennet insists that her daughters find rich husbands and settle down. When a wealthy bachelor starts living near them, Mrs Bennet's happiness knows no bounds.",
+    "author": "Jane Austen",
+    "book_release_year": 1813,
+    "book_image": "https://i.imgur.com/mmJMAWM.jpg",
+    "director": "Joe Wright",
+    "movie_release_year": 2005,
+    "movie_image": "https://i.imgur.com/ITd1FA0.jpg",
+    "book_link": "https://www.goodreads.com/book/show/1885.Pride_and_Prejudice",
+    "movie_link": "https://letterboxd.com/film/pride-prejudice/",
+    "genres": [
+      5
+    ]
+  }
+},
+{
+  "model": "adaptations.adaptation",
+  "pk": 8,
+  "fields": {
+    "name": "Requiem for a Dream",
+    "synopsis": "\"Requiem for a Dream\" tells parallel stories that are linked by the relationship between the lonely, widowed Sara Goldfarb and her sweet but aimless son, Harry.",
+    "author": "Hubert Selby Jr.",
+    "book_release_year": 1978,
+    "book_image": "https://i.imgur.com/kXD7vdJ.jpg",
+    "director": "Darren Aronofsky",
+    "movie_release_year": 2001,
+    "movie_image": "https://i.imgur.com/ATHCvN6.jpg",
+    "book_link": "https://www.goodreads.com/book/show/46945.Requiem_for_a_Dream",
+    "movie_link": "https://letterboxd.com/film/requiem-for-a-dream/",
+    "genres": [
+      10,
+      6
+    ]
+  }
+},
+{
+  "model": "adaptations.adaptation",
+  "pk": 9,
+  "fields": {
+    "name": "If Beale Street Could Talk",
+    "synopsis": "The lives of childhood friends and lovers Tish and Fonny take a drastic turn when Fonny gets falsely accused of a crime. A pregnant Tish then sets out to prove his innocence.",
+    "author": "James Baldwin",
+    "book_release_year": 1974,
+    "book_image": "https://i.imgur.com/bTi9Vw8.jpg",
+    "director": "Barry Jenkins",
+    "movie_release_year": 2018,
+    "movie_image": "https://i.imgur.com/fIEyYud.jpg",
+    "book_link": "https://www.goodreads.com/book/show/38463.If_Beale_Street_Could_Talk",
+    "movie_link": "https://letterboxd.com/film/if-beale-street-could-",
+    "genres": [
+      5,
+      6
+    ]
+  }
+},
+{
+  "model": "adaptations.adaptation",
+  "pk": 10,
+  "fields": {
+    "name": "Gone Girl",
+    "synopsis": "Nick Dunne discovers that the entire media focus has shifted on him when his wife, Amy Dunne, mysteriously disappears on the day of their fifth wedding anniversary.",
+    "author": "Gillian Flynn",
+    "book_release_year": 2012,
+    "book_image": "https://i.imgur.com/Kr5X7uR.jpg",
+    "director": "David Fincher",
+    "movie_release_year": 2014,
+    "movie_image": "https://i.imgur.com/5wNk3jj.jpg",
+    "book_link": "https://www.goodreads.com/book/show/19288043-gone-girl",
+    "movie_link": "https://letterboxd.com/film/gone-girl/",
+    "genres": [
+      10,
+      4,
+      6
+    ]
+  }
+},
+{
+  "model": "adaptations.adaptation",
+  "pk": 11,
+  "fields": {
+    "name": "The Age of Innocence",
+    "synopsis": "Newland Archer is a lawyer who is happily engaged to May. However, his life turns upside down when he meets and falls in love with May's scandalous cousin, Ellen.",
+    "author": "Edith Wharton",
+    "book_release_year": 1920,
+    "book_image": "https://i.imgur.com/jY64GOs.jpg",
+    "director": "Martin Scorsese",
+    "movie_release_year": 1994,
+    "movie_image": "https://i.imgur.com/XJEQNQX.jpg",
+    "book_link": "https://www.goodreads.com/book/show/53835.The_Age_of_Innocence",
+    "movie_link": "https://letterboxd.com/film/the-age-of-innocence/",
+    "genres": [
+      9,
+      5,
+      6
+    ]
+  }
+},
+{
+  "model": "adaptations.adaptation",
+  "pk": 12,
+  "fields": {
+    "name": "American Psycho",
+    "synopsis": "Patrick Bateman, a wealthy investment banker, hides his psychopathic ego from his friends. Later, his illogical fantasies escalate and he submits to an uncontrollable bloodlust.",
+    "author": "Bret Easton Ellis",
+    "book_release_year": 1991,
+    "book_image": "https://i.imgur.com/phfE3oh.jpg",
+    "director": "Mary Harron",
+    "movie_release_year": 2000,
+    "movie_image": "https://i.imgur.com/UUTEdnz.jpg",
+    "book_link": "https://www.goodreads.com/book/show/28676.American_Psycho",
+    "movie_link": "https://letterboxd.com/film/american-psycho/",
+    "genres": [
+      1,
+      2,
+      3
+    ]
+  }
+},
+{
+  "model": "adaptations.adaptation",
+  "pk": 13,
+  "fields": {
+    "name": "The Godfather",
+    "synopsis": "Don Vito Corleone, head of a mafia family, decides to hand over his empire to his youngest son Michael. However, his decision unintentionally puts the lives of his loved ones in grave danger.",
+    "author": "Mario Puzo",
+    "book_release_year": 1969,
+    "book_image": "https://i.imgur.com/ykMzlgD.jpg",
+    "director": "Francis Ford Coppola",
+    "movie_release_year": 1972,
+    "movie_image": "https://i.imgur.com/hNJGFQu.jpg",
+    "book_link": "https://www.goodreads.com/book/show/22034.The_Godfather",
+    "movie_link": "https://letterboxd.com/film/the-godfather/",
+    "genres": [
+      6,
+      7
+    ]
+  }
+},
+{
+  "model": "adaptations.adaptation",
+  "pk": 14,
+  "fields": {
+    "name": "Mysterious Skin",
+    "synopsis": "One youth becomes obsessed with UFOs, while another becomes a gay hustler in the years following a childhood trauma.",
+    "author": "Scott Heim",
+    "book_release_year": 1995,
+    "book_image": "https://i.imgur.com/CyBUJUt.jpg",
+    "director": "Gregg Araki",
+    "movie_release_year": 2005,
+    "movie_image": "https://i.imgur.com/DbQXBDs.jpg",
+    "book_link": "https://www.goodreads.com/book/show/92365.Mysterious_Skin",
+    "movie_link": "https://letterboxd.com/film/mysterious-skin/",
+    "genres": [
+      11,
+      6
+    ]
+  }
+},
+{
+  "model": "adaptations.adaptation",
+  "pk": 15,
+  "fields": {
+    "name": "Battle Royale",
+    "synopsis": "42 9th graders are sent to a deserted island. They are given a map, food, and various weapons. An explosive collar is fitted around their neck. If they break a rule, the collar explodes. Their mission: kill each other and be the last one standing.",
+    "author": "Koushun Takami",
+    "book_release_year": 1999,
+    "book_image": "https://i.imgur.com/zQQZLGy.jpg",
+    "director": "Kinji Fukasaku",
+    "movie_release_year": 2001,
+    "movie_image": "https://i.imgur.com/Y2cVoVn.jpg",
+    "book_link": "https://www.goodreads.com/book/show/57891.Battle_Royale",
+    "movie_link": "https://letterboxd.com/film/battle-royale/",
+    "genres": [
+      8,
+      1,
+      3
+    ]
+  }
+},
+{
+  "model": "adaptations.adaptation",
+  "pk": 16,
+  "fields": {
+    "name": "Fear and Loathing in Las Vegas",
+    "synopsis": "Raoul is a journalist who along with his lawyer head to Las Vegas to cover the mint 400 motorcycle race. Soon pleasure overtakes work and they indulge in a variety of recreational drugs.",
+    "author": "Hunter S. Thompson",
+    "book_release_year": 1971,
+    "book_image": "https://i.imgur.com/Gh0vaco.jpg",
+    "director": "Terry Gilliam",
+    "movie_release_year": 1998,
+    "movie_image": "https://i.imgur.com/L9lu6eB.jpg",
+    "book_link": "https://www.goodreads.com/book/show/7745.Fear_and_Loathing_in_Las_Vegas",
+    "movie_link": "https://letterboxd.com/film/fear-and-loathing-in-l",
+    "genres": [
+      12
+    ]
+  }
+},
+{
+  "model": "adaptations.adaptation",
+  "pk": 17,
+  "fields": {
+    "name": "We Need to Talk About Kevin",
+    "synopsis": "Pregnancy does not seem to agree with Eva, but what's worse, when she does give birth to a baby boy named Kevin, she can't seem to bond with him. When Kevin grows from a fussy, demanding toddler into a sociopathic teen, Eva is forced to deal with the aftermath of her son's horrific act.",
+    "author": "Lionel Shriver",
+    "book_release_year": 2003,
+    "book_image": "https://i.imgur.com/lpdggt4.jpg",
+    "director": "Lynne Ramsey",
+    "movie_release_year": 2011,
+    "movie_image": "https://i.imgur.com/WsPzs2w.jpg",
+    "book_link": "https://www.goodreads.com/book/show/80660.We_Need_to_Talk_About_Kevin",
+    "movie_link": "https://letterboxd.com/film/we-need-to-talk-about-",
+    "genres": [
+      10,
+      6
+    ]
+  }
+},
+{
+  "model": "adaptations.adaptation",
+  "pk": 18,
+  "fields": {
+    "name": "To Kill a Mockingbird",
+    "synopsis": "In the Depression era, Atticus Finch, a lawyer, sets out to defend a black man, who is accused of raping a white woman. Meanwhile, his children, Scout and Jem, spy on their reclusive neighbour.",
+    "author": "Harper Lee",
+    "book_release_year": 1960,
+    "book_image": "https://i.imgur.com/4pjNqdi.jpg",
+    "director": "Robert Mulligan",
+    "movie_release_year": 1963,
+    "movie_image": "https://i.imgur.com/JrTzGMs.jpg",
+    "book_link": "https://www.goodreads.com/book/show/2657.To_Kill_a_Mockingbird",
+    "movie_link": "https://letterboxd.com/film/to-kill-a-mockingbird/",
+    "genres": [
+      11,
+      6
+    ]
+  }
+},
+{
+  "model": "adaptations.adaptation",
+  "pk": 19,
+  "fields": {
+    "name": "Fight Club",
+    "synopsis": "Unhappy with his capitalistic lifestyle, a white-collared insomniac forms an underground fight club with Tyler, a careless soap salesman. Soon, their venture spirals down into something sinister.",
+    "author": "Chuck Palahniuk",
+    "book_release_year": 1996,
+    "book_image": "https://i.imgur.com/84gbuOK.jpg",
+    "director": "David Fincher",
+    "movie_release_year": 1999,
+    "movie_image": "https://i.imgur.com/kmrXUkh.jpg",
+    "book_link": "https://www.goodreads.com/book/show/36236124-fight-club",
+    "movie_link": "https://letterboxd.com/film/fight-club/",
+    "genres": [
+      1,
+      10,
+      6,
+      7
+    ]
+  }
+},
+{
+  "model": "adaptations.adaptation",
+  "pk": 20,
+  "fields": {
+    "name": "Room",
+    "synopsis": "After years of being held captive in an isolated shed by a kidnapper, Joy and her little son, Jack, manage to escape the confinement and gain their freedom.",
+    "author": "Emma Donoghue",
+    "book_release_year": 2010,
+    "book_image": "https://i.imgur.com/Px6wVPp.jpg",
+    "director": "Lenny Abrahamson",
+    "movie_release_year": 2015,
+    "movie_image": "https://i.imgur.com/0ktvlEt.jpg",
+    "book_link": "https://www.goodreads.com/book/show/31685789-room",
+    "movie_link": "https://letterboxd.com/film/room-2015/",
+    "genres": [
+      1,
+      6
+    ]
+  }
+},
+{
+  "model": "adaptations.adaptation",
+  "pk": 21,
+  "fields": {
+    "name": "The Color Purple",
+    "synopsis": "Celie, a young African-American woman, is raped by her father and bears two of his children. She is then married off to an abusive man and has a struggle-filled existence.",
+    "author": "Alice Walker",
+    "book_release_year": 1982,
+    "book_image": "https://i.imgur.com/47hDY0n.jpg",
+    "director": "Steven Spielberg",
+    "movie_release_year": 1986,
+    "movie_image": "https://i.imgur.com/inSB5kg.jpg",
+    "book_link": "https://www.goodreads.com/book/show/52892857-the-color-purple",
+    "movie_link": "https://letterboxd.com/film/the-color-purple/",
+    "genres": [
+      9,
+      6
+    ]
+  }
+},
+{
+  "model": "adaptations.adaptation",
+  "pk": 22,
+  "fields": {
+    "name": "Lust, Caution",
+    "synopsis": "A young woman, Wang Jiazhi, gets swept up in a dangerous game of emotional intrigue with a powerful political figure, Mr. Yee.",
+    "author": "Eileen Chang",
+    "book_release_year": 1979,
+    "book_image": "https://i.imgur.com/SG78TGp.png",
+    "director": "Ang Lee",
+    "movie_release_year": 2008,
+    "movie_image": "https://i.imgur.com/YiTlqoj.jpg",
+    "book_link": "https://www.goodreads.com/en/book/show/407760",
+    "movie_link": "https://letterboxd.com/film/lust-caution/",
+    "genres": [
+      1,
+      5,
+      6
+    ]
+  }
+},
+{
+  "model": "adaptations.adaptation",
+  "pk": 23,
+  "fields": {
+    "name": "Little Women",
+    "synopsis": "While the March sisters enter the threshold of womanhood, they go through many ups and downs in life and endeavour to make important decisions that can affect their future.",
+    "author": "Louisa May Walcott",
+    "book_release_year": 1868,
+    "book_image": "https://i.imgur.com/aKGJr7w.jpg",
+    "director": "Greta Gerwig",
+    "movie_release_year": 2019,
+    "movie_image": "https://i.imgur.com/iVD8M3h.jpg",
+    "book_link": "https://www.goodreads.com/book/show/1934.Little_Women",
+    "movie_link": "https://letterboxd.com/film/little-women-2019/",
+    "genres": [
+      2,
+      11,
+      6
+    ]
+  }
+},
+{
+  "model": "adaptations.adaptation",
+  "pk": 24,
+  "fields": {
+    "name": "Never Let Me Go",
+    "synopsis": "Kathy, Tommy and Ruth are raised in an idyllic environment at Hailsham, a boarding school. Even as they deal with pangs of love, a teacher lets it slip that their fate has already been written.",
+    "author": "Kazuo Ishiguro",
+    "book_release_year": 2005,
+    "book_image": "https://i.imgur.com/13zBxmj.jpg",
+    "director": "Mark Romanek",
+    "movie_release_year": 2011,
+    "movie_image": "https://i.imgur.com/mVDn7xn.jpg",
+    "book_link": "https://www.goodreads.com/book/show/6334.Never_Let_Me_Go",
+    "movie_link": "https://letterboxd.com/film/never-let-me-go-2010/",
+    "genres": [
+      8
+    ]
+  }
+},
+{
+  "model": "adaptations.adaptation",
+  "pk": 25,
+  "fields": {
+    "name": "The Virgin Suicides",
+    "synopsis": "This fictional story centers on the lives of five doomed sisters, the Lisbon girls. The story is told in first person plural from the perspective of an anonymous group of teenage boys who struggle to find an explanation for the Lisbons' deaths.",
+    "author": "Jeffrey Eugenides",
+    "book_release_year": 1993,
+    "book_image": "https://i.imgur.com/v0kiW8M.jpg",
+    "director": "Sofia Coppola",
+    "movie_release_year": 2000,
+    "movie_image": "https://i.imgur.com/9U3YLWh.jpg",
+    "book_link": "https://www.goodreads.com/book/show/10956.The_Virgin_Suicides",
+    "movie_link": "https://letterboxd.com/film/the-virgin-suicides/",
+    "genres": [
+      11,
+      4,
+      6
+    ]
+  }
+},
+{
+  "model": "adaptations.adaptation",
+  "pk": 26,
+  "fields": {
+    "name": "Picnic at Hanging Rock",
+    "synopsis": "Appleyard College, a girls' private school, plans a summer picnic to Hanging Rock in Victoria. However, things turn bad when a few students and a teacher go missing at the picnic.",
+    "author": "Joan Lindsay",
+    "book_release_year": 1967,
+    "book_image": "https://i.imgur.com/jRFQDKE.jpg",
+    "director": "Peter Weir",
+    "movie_release_year": 1976,
+    "movie_image": "https://i.imgur.com/e8nH1XS.jpg",
+    "book_link": "https://www.goodreads.com/book/show/791345.Picnic_at_Hanging_Rock",
+    "movie_link": "https://letterboxd.com/film/picnic-at-hanging-rock",
+    "genres": [
+      3,
+      11,
+      4
+    ]
+  }
+},
+{
+  "model": "adaptations.adaptation",
+  "pk": 27,
+  "fields": {
+    "name": "Frankenstein",
+    "synopsis": "Frankenstein tells the story of Victor Frankenstein, a young scientist who creates a sapient creature in an unorthodox scientific experiment.",
+    "author": "Mary Shelley",
+    "book_release_year": 1818,
+    "book_image": "https://i.imgur.com/wu5dGkT.jpg",
+    "director": "James Whale",
+    "movie_release_year": 1931,
+    "movie_image": "https://i.imgur.com/kaXJTHk.jpg",
+    "book_link": "https://www.goodreads.com/book/show/35031085-frankenstein",
+    "movie_link": "https://letterboxd.com/film/frankenstein-1931/",
+    "genres": [
+      3
+    ]
+  }
+},
+{
+  "model": "adaptations.adaptation",
+  "pk": 28,
+  "fields": {
+    "name": "A Streetcar Named Desire",
+    "synopsis": "Blanche DuBois, a young woman, must take a streetcar to her sister's house in New Orleans. She faces scorn from her brother-in-law and simultaneously gets attracted to his friend.",
+    "author": "Tennesse Williams",
+    "book_release_year": 1947,
+    "book_image": "https://i.imgur.com/KEoXM7h.jpg",
+    "director": "Eli Kazan",
+    "movie_release_year": 1951,
+    "movie_image": "https://i.imgur.com/CV1cLqL.jpg",
+    "book_link": "https://www.goodreads.com/book/show/12220.A_Streetcar_Named_Desire",
+    "movie_link": "https://letterboxd.com/film/a-streetcar-named-desi",
+    "genres": [
+      6
+    ]
+  }
+},
+{
+  "model": "adaptations.adaptation",
+  "pk": 29,
+  "fields": {
+    "name": "Diary of a Teenage Girl",
+    "synopsis": "In 1970s San Francisco, a precocious 15-year-old  embarks on an enthusiastic sexual odyssey, beginning with her mother's current lover.",
+    "author": "Phoebe Gloeckner",
+    "book_release_year": 2002,
+    "book_image": "https://i.imgur.com/8eXqqC6.jpg",
+    "director": "Marielle Heller",
+    "movie_release_year": 2015,
+    "movie_image": "https://i.imgur.com/MM9zXfi.jpg",
+    "book_link": "https://www.goodreads.com/en/book/show/857125",
+    "movie_link": "https://letterboxd.com/film/the-diary-of-a-teenage",
+    "genres": [
+      11
+    ]
+  }
+},
+{
+  "model": "adaptations.adaptation",
+  "pk": 30,
+  "fields": {
+    "name": "The Silence of the Lambs",
+    "synopsis": "Clarice Starling, an FBI agent, seeks help from Hannibal Lecter, a psychopathic serial killer and former psychiatrist, in order to apprehend another serial killer who has been claiming female victims.",
+    "author": "Thomas Harris",
+    "book_release_year": 1981,
+    "book_image": "https://i.imgur.com/s5UQU4E.jpg",
+    "director": "Jonathan Demme",
+    "movie_release_year": 1991,
+    "movie_image": "https://i.imgur.com/x1TDdEW.jpg",
+    "book_link": "https://www.goodreads.com/book/show/23807.The_Silence_of_the_Lambs",
+    "movie_link": "https://letterboxd.com/film/the-silence-of-the-lam",
+    "genres": [
+      1,
+      10,
+      3,
+      4
+    ]
+  }
+},
+{
+  "model": "adaptations.adaptation",
+  "pk": 31,
+  "fields": {
+    "name": "Drive",
+    "synopsis": "A stuntman and getaway driver falls in love with Irene who is married to a criminal. In a bid to protect her from her husband and some gangsters, he decides to cross over to the other side of the law.",
+    "author": "James Sallis",
+    "book_release_year": 2005,
+    "book_image": "https://i.imgur.com/Py9RkKn.jpg",
+    "director": "Nicolas Winding Refn",
+    "movie_release_year": 2011,
+    "movie_image": "https://i.imgur.com/zTw4wVA.jpg",
+    "book_link": "https://www.goodreads.com/book/show/176378.Drive",
+    "movie_link": "https://letterboxd.com/film/drive-2011/",
+    "genres": [
+      1,
+      7
+    ]
+  }
+},
+{
+  "model": "adaptations.adaptation",
+  "pk": 32,
+  "fields": {
+    "name": "The Great Gatsby",
+    "synopsis": "Nick Carraway, a World War I veteran who moves to New York with the hope of making it big, finds himself attracted to Jay Gatsby and his flamboyant lifestyle.",
+    "author": "F. Scott Fitzgerald",
+    "book_release_year": 1925,
+    "book_image": "https://i.imgur.com/rw9ZRSo.jpg",
+    "director": "Baz Luhrmann",
+    "movie_release_year": 2013,
+    "movie_image": "https://i.imgur.com/8chb3JU.jpg",
+    "book_link": "https://www.goodreads.com/book/show/4671.The_Great_Gatsby",
+    "movie_link": "https://letterboxd.com/film/the-great-gatsby-2013/",
+    "genres": [
+      4,
+      5,
+      6
+    ]
+  }
+},
+{
+  "model": "adaptations.adaptation",
+  "pk": 33,
+  "fields": {
+    "name": "Everything is Illuminated",
+    "synopsis": "A young man sets out on a quest to find the woman who saved his grandfather in a small Ukrainian town that was wiped off the map by the Nazi invasion during the World War.",
+    "author": "Jonathon Safran Foer",
+    "book_release_year": 2002,
+    "book_image": "https://i.imgur.com/Qp2Z8dO.jpg",
+    "director": "Liev Schreiber",
+    "movie_release_year": 2005,
+    "movie_image": "https://i.imgur.com/0mdPGRB.jpg",
+    "book_link": "https://www.goodreads.com/book/show/256566.Everything_Is_Illuminated",
+    "movie_link": "https://letterboxd.com/film/everything-is-illumina",
+    "genres": [
+      2,
+      6
+    ]
+  }
+},
+{
+  "model": "adaptations.adaptation",
+  "pk": 34,
+  "fields": {
+    "name": "I'm Thinking of Ending Things",
+    "synopsis": "A young woman soon finds herself with misgivings after travelling with her new boyfriend to his parents' secluded farm.",
+    "author": "Iain Reid",
+    "book_release_year": 2016,
+    "book_image": "https://i.imgur.com/kRgibn8.jpg",
+    "director": "Charlie Kaufman",
+    "movie_release_year": 2020,
+    "movie_image": "https://i.imgur.com/DU678wb.jpg",
+    "book_link": "https://www.goodreads.com/book/show/40605223-i-m-thinking-of-ending-things",
+    "movie_link": "https://letterboxd.com/film/im-thinking-of-ending-",
+    "genres": [
+      10,
+      3
+    ]
+  }
+},
+{
+  "model": "adaptations.adaptation",
+  "pk": 35,
+  "fields": {
+    "name": "One Flew Over The Cuckoo's Nest",
+    "synopsis": "In order to escape the prison labour, McMurphy, a prisoner, fakes insanity and is shifted to the special ward for the mentally unstable. In this ward, he must rise up against a cruel nurse, Ratched.",
+    "author": "Ken Kesey",
+    "book_release_year": 1962,
+    "book_image": "https://i.imgur.com/MajawLM.jpg",
+    "director": "Miloš Forman",
+    "movie_release_year": 1975,
+    "movie_image": "https://i.imgur.com/EZxQGxs.jpg",
+    "book_link": "https://www.goodreads.com/book/show/332613.One_Flew_Over_the_Cuckoo_s_Nest",
+    "movie_link": "https://letterboxd.com/film/one-flew-over-the-cuck",
+    "genres": [
+      6
+    ]
+  }
+},
+{
+  "model": "adaptations.adaptation",
+  "pk": 36,
+  "fields": {
+    "name": "No Country For Old Men",
+    "synopsis": "A hunter's life takes a drastic turn when he discovers two million dollars while strolling through the aftermath of a drug deal. He is then pursued by a psychopathic killer who wants the money.",
+    "author": "Cormac McCarthy",
+    "book_release_year": 2005,
+    "book_image": "https://i.imgur.com/jLWeyLG.jpg",
+    "director": "Ethan Coen, Joel Coen",
+    "movie_release_year": 2008,
+    "movie_image": "https://i.imgur.com/sS8tvym.jpg",
+    "book_link": "https://www.goodreads.com/book/show/12497.No_Country_for_Old_Men",
+    "movie_link": "https://letterboxd.com/film/no-country-for-old-men",
+    "genres": [
+      1,
+      4,
+      7
+    ]
+  }
+},
+{
+  "model": "adaptations.adaptation",
+  "pk": 37,
+  "fields": {
+    "name": "Sense and Sensibility",
+    "synopsis": "After the death of their father, three young girls find themselves in abject poverty. The responsibility to provide for the family lands on the oldest sisters, who are also dealing with heartbreaks.",
+    "author": "Jane Austen",
+    "book_release_year": 1811,
+    "book_image": "https://i.imgur.com/iFVhj9s.jpg",
+    "director": "Ang Lee",
+    "movie_release_year": 1995,
+    "movie_image": "https://i.imgur.com/fW04QBG.jpg",
+    "book_link": "https://www.goodreads.com/book/show/14935.Sense_and_Sensibility",
+    "movie_link": "https://letterboxd.com/film/sense-and-sensibility/",
+    "genres": [
+      5
+    ]
+  }
+},
+{
+  "model": "adaptations.adaptation",
+  "pk": 38,
+  "fields": {
+    "name": "Romeo and Juliet",
+    "synopsis": "The rivalry between Verona's two well-established families, the Capulets and the Montagues, affects the relationship of their children Romeo and Juliet.",
+    "author": "William Shakespeare",
+    "book_release_year": 1597,
+    "book_image": "https://i.imgur.com/BkL7buj.jpg",
+    "director": "Baz Luhrmann",
+    "movie_release_year": 1996,
+    "movie_image": "https://i.imgur.com/pR1BZq1.jpg",
+    "book_link": "https://www.goodreads.com/book/show/18135.Romeo_and_Juliet",
+    "movie_link": "https://letterboxd.com/film/romeo-juliet-1996/",
+    "genres": [
+      5
+    ]
+  }
+}
+]

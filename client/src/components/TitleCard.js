@@ -15,6 +15,9 @@ const TitleCard = () => {
       try {
         const { data } = await axios(`/api/adaptations/${id}`)
         setTitle(data)
+        // console.log('reviews', title.reviews.map(t => {
+        //   return t.text
+        // }))
         // console.log('title', title.genres.name)
         // title.genres.map(t => {
         //   console.log(t.name)
@@ -36,6 +39,42 @@ const TitleCard = () => {
   } else {
     titlesToRender = 'Loading....'
   }
+
+  let reviewsToRender
+
+
+
+  if (title.reviews) {
+    reviewsToRender = title.reviews.map((t, i) => {
+      // const spoiler = t.spoiler
+      return <div className="review-post" key={i}>
+        <p>Movie Rating {t.movie_rating}</p>
+        <p>Book Rating {t.book_rating}</p>
+        <p>Thoughts {t.text}</p>
+        <p>Differences between the two {t.differences}</p>
+      </div>
+    })
+  } else {
+    reviewsToRender = 'Loading...'
+  }
+  
+  // {title.reviews ?
+  //   reviewsToRender = title.reviews.map((t,i) => {
+  //     return
+  //   })
+
+  // let spoilersToRender
+
+  // const spoilerCheck = (s) => {
+  //   if (title.reviews) {
+  //     spoilersToRender = title.reviews.map((t, i) => {
+  //       console.log(t)
+  //       s = t.spoilers
+  //     })
+  //   }
+  // }
+
+
 
 
 
@@ -79,6 +118,16 @@ const TitleCard = () => {
               <h4 className='review-link'>Post a review!</h4>
             </Link>
           </div>
+          {/* {title.reviews.map(t => { */}
+          {/* {t.spoiler ? 
+            <h3>Hidden</h3>
+          
+            :
+            <div className="div review-box d-flex flex-wrap justify-content-center">
+              {reviewsToRender}
+            </div>
+          } */}
+          {/* })} */}
         </div>
       </div>
     </>

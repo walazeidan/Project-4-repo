@@ -109,4 +109,35 @@
 }
 
 
+  .review-box {
+    max-width: 80vw;
+  }
+  h2 {
+    text-align: left;
+    margin-bottom: 10px;
+    font-size: 70px;
+  }
+  h3 {
+    margin-bottom: 30px;
+  }
+  p {
+    margin: 0 auto;
+    padding: 7px;
+  }
+  .text-post {
+    max-width: 320px;
+    word-break: break-all;
+  }
+
+
+.review-post {
+  background-color: rgba(0,0,0,0.5);
+  border-radius: 10px;
+  max-width: 322.56px;
+  position: relative;
+  bottom: 10px;
+  margin: 10px;
+}
+
+
 
