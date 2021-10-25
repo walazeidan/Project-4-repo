@@ -1,0 +1,93 @@
+[
+{
+  "model": "genres.genre",
+  "pk": 1,
+  "fields": {
+    "name": "Thriller"
+  }
+},
+{
+  "model": "genres.genre",
+  "pk": 2,
+  "fields": {
+    "name": "Comedy"
+  }
+},
+{
+  "model": "genres.genre",
+  "pk": 3,
+  "fields": {
+    "name": "Horror"
+  }
+},
+{
+  "model": "genres.genre",
+  "pk": 4,
+  "fields": {
+    "name": "Mystery"
+  }
+},
+{
+  "model": "genres.genre",
+  "pk": 5,
+  "fields": {
+    "name": "Romance"
+  }
+},
+{
+  "model": "genres.genre",
+  "pk": 6,
+  "fields": {
+    "name": "Drama"
+  }
+},
+{
+  "model": "genres.genre",
+  "pk": 7,
+  "fields": {
+    "name": "Crime"
+  }
+},
+{
+  "model": "genres.genre",
+  "pk": 8,
+  "fields": {
+    "name": "Dystopia"
+  }
+},
+{
+  "model": "genres.genre",
+  "pk": 9,
+  "fields": {
+    "name": "Historical Fiction"
+  }
+},
+{
+  "model": "genres.genre",
+  "pk": 10,
+  "fields": {
+    "name": "Psychological Thriller"
+  }
+},
+{
+  "model": "genres.genre",
+  "pk": 11,
+  "fields": {
+    "name": "Coming-Of-Age"
+  }
+},
+{
+  "model": "genres.genre",
+  "pk": 12,
+  "fields": {
+    "name": "Biography"
+  }
+},
+{
+  "model": "genres.genre",
+  "pk": 13,
+  "fields": {
+    "name": "Fantasy"
+  }
+}
+]

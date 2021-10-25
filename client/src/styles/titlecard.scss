@@ -1,0 +1,112 @@
+.title-card {
+  // border: 1px solid black;
+  width: 40vh;
+  margin: 0 auto;
+  color: aliceblue;
+}
+
+.movie-book-synopsis {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.title-name {
+  text-align: center;
+  color: aliceblue;
+  font-family: 'Montserrat Subrayada', sans-serif;
+}
+
+.movie-book {
+  display: flex;
+  justify-content: space-between;
+  // border: 1px solid black;
+  a {
+    border: none;
+    text-decoration: none;
+  .learn-more-btn {
+      font-size: 25px;
+      padding: 10px 10px;
+      color: black;
+      // width: 150px;
+      // height: 150px;
+      background-color: rgb(221, 130, 130, 0.5);
+      // border: 1px solid black;
+      border-radius: 10px;
+      transition: 0.4s ease-in-out;
+      text-decoration: none;
+      &:hover {
+        transform: scale(1.1);
+        background-color: rgba(193, 129, 11, 0);
+      }
+    }
+}
+}
+
+.book{
+  display: flex;
+  flex-direction: column;
+  margin: 0 200px;
+  // border: 1px solid black;
+  // margin: 0 auto;
+  .book-image {
+    height: 400px;
+}
+}
+
+.movie { 
+  display: flex;
+  flex-direction: column;
+  margin: 0 200px;
+  // border: 1px solid black;
+  // margin: 0 auto;
+  .movie-image {
+    height: 400px;
+  }
+}
+
+.synopsis {
+  // margin-top: 50vh;
+  color: aliceblue;
+  text-align: center;
+  display: block;
+  display: flex;
+  flex-direction: column;
+  // border: 1px solid black;
+}
+
+.genre-list {
+  text-decoration: none;
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+}
+
+
+.review-link-div {
+  a {
+  text-decoration: none;
+  border: none;
+  .review-link{
+    border: none;
+    text-decoration: none;
+      font-size: 25px;
+      padding: 10px 10px;
+      color: black;
+      // width: 150px;
+      // height: 150px;
+      background-color: rgb(221, 130, 130, 0.5);
+      // border: 1px solid black;
+      border-radius: 10px;
+      transition: 0.4s ease-in-out;
+      text-decoration: none;
+      &:hover {
+        transform: scale(1.1);
+        background-color: rgba(193, 129, 11, 0);
+      }
+    }
+  }
+}
+
+
+

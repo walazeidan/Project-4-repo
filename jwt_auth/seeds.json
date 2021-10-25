@@ -1,0 +1,44 @@
+[
+{
+  "model": "jwt_auth.user",
+  "pk": 1,
+  "fields": {
+    "password": "pbkdf2_sha256$260000$zSH0oYWoJb4Q4y3ImsaWCv$BuKLmD5gOsuofq6OHm7BNovb2PZx+euF7YMyzTBHRdo=",
+    "last_login": "2021-10-21T09:28:17.378Z",
+    "is_superuser": true,
+    "username": "wala",
+    "is_staff": true,
+    "is_active": true,
+    "date_joined": "2021-10-21T09:27:21.641Z",
+    "email": "wala@email.com",
+    "first_name": "",
+    "last_name": "",
+    "profile_image": "",
+    "groups": [],
+    "user_permissions": [],
+    "genres": []
+  }
+},
+{
+  "model": "jwt_auth.user",
+  "pk": 2,
+  "fields": {
+    "password": "pbkdf2_sha256$260000$ICeMKH5xgyJ3LjQdSVvDZF$WZaq8eKnXizp1EgTpZgo9h5ZnzrCQF2+CN7yuBO71wg=",
+    "last_login": null,
+    "is_superuser": false,
+    "username": "wala45",
+    "is_staff": false,
+    "is_active": true,
+    "date_joined": "2021-10-21T10:50:23.299Z",
+    "email": "wala45@email.com",
+    "first_name": "wala",
+    "last_name": "zeidan",
+    "profile_image": "wala.jpeg",
+    "groups": [],
+    "user_permissions": [],
+    "genres": [
+      2
+    ]
+  }
+}
+]
