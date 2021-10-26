@@ -10,7 +10,7 @@ const List = ({ showMore, LoadMoreButton }) => {
   
   const [ titles, setTitles ] = useState([])
   const [ hasError, setHasError ] = useState(false)
-  const [ filteredTitles, setFilteredTitles ] = useState([])
+  const [ filteredTitles, setFilteredTitles ] = useState({})
   const [ filters, setFilters ] = useState({ genre: 'All' ,searchTerm: '' })
 
   
@@ -36,32 +36,38 @@ const List = ({ showMore, LoadMoreButton }) => {
       // && (title.genres.filter(name => name.includes(filters.genres)) || filters.type === 'All')
       // }
     }))
-    console.log(filteredTitles)
   }, [setFilteredTitles, filters, titles])
+
+  const handleFilters = (e) => {
+    setFilteredTitles(titles.map(t => t.genres.map(g => g.name === e.target.value)))
+    // console.log(setFilteredTitles(filteredGenres))
+  }
 
 
   return (
     <div className="rn">
       <div className="search-filter">
-        <Search titles={titles} setFilteredTitles={setFilteredTitles} filters={filters} setFilters={setFilters}/>
+        <Search titles={titles} setFilteredTitles={setFilteredTitles} filters={filters} setFilters={setFilters} handleFilters={handleFilters}/>
       </div>
-      <div className="titles-page">
-        {(filteredTitles.length > 0 ?
-          filteredTitles : titles).map(title => {
-          return (
-            <>
+      <div className="all-titles">
+        <div className="titles-page">
+          {(filteredTitles.length > 0 ?
+            filteredTitles : titles).map(title => {
+            return (
               <>
-                <div className='card col-lg-3 mb-4 col-md-6'>
-                  <Link to={`/adaptations/${title.id}/`}>
-                    <h4 className="title-name" value={title.name}>{title.name}</h4>
-                    <img className="title-image" src={title.book_image}></img>
-                  </Link>
-                </div>
+                <>
+                  <div className='card col-lg-3 mb-4 col-md-6'>
+                    <Link to={`/adaptations/${title.id}/`}>
+                      <h4 className="title-name" value={title.name}>{title.name}</h4>
+                      <img className="title-image" src={title.book_image}></img>
+                    </Link>
+                  </div>
+                </>
               </>
-            </>
-          )
-        })
-        }
+            )
+          })
+          }
+        </div>
       </div>
       {/* {showMore && <button onClick={LoadMoreButton}> Load More </button>} */}
       {/* <LoadMore /> */}

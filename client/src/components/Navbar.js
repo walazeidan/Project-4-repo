@@ -14,12 +14,24 @@ const Navbar = () => {
   return (
     <div className="navbar-container">
       <div className="title">
+        <div className="b">T</div>
+        <div className="o">H</div>
+        <div className="u">E</div>
         <div className="b">H</div>
         <div className="o">O</div>
-        <div className="u">N</div>
-        <div className="n">N</div>
-        <div className="c">E</div>
-        <div className="e">Y</div>
+        <div className="u">L</div>
+        <div className="n">L</div>
+        <div className="c">Y</div>
+        <div className="e">W</div>
+        <div className="b">O</div>
+        <div className="o">O</div>
+        <div className="u">D</div>
+        <div className="b">E</div>
+        <div className="o">F</div>
+        <div className="u">F</div>
+        <div className="n">E</div>
+        <div className="c">C</div>
+        <div className="e">T</div>
         <div className="shadow"></div>
         <div className="shadow-two"></div>
         {/* <h1>HoneyMoon</h1> */}

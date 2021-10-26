@@ -1,6 +1,6 @@
 .register-page,
 .login-page {
-  height: 100vh;
+  // height: 100vh;
   // background-image: url("../styles/assets/homebook.jpeg");
   // background-color: grey;
   // background-blend-mode: multiply;
@@ -55,7 +55,7 @@
     button {
       display: block;
       margin-top: 10px;
-      color: black;
+      color: white;
       cursor: pointer;
       &:hover {
         color: white;
@@ -92,6 +92,9 @@ button {
   margin: 0 auto 10px;
   width: 25vh;
   transition: 0.4s ease-in-out;
+  color: white;
+  border: 1px solid white;
+  background-color: rgba(0,0,0,0.3);
   &:hover {
     transform: scale(1.05);
   }
@@ -138,16 +141,19 @@ select {
   a {
     &:hover {
       text-decoration: none;
-      // color: $whitecolor;
+      color: white;
     }
-    // span {
-    //   color: $fontcolor;
-    // }
+    span {
+      color: white;
+    }
   }
 }
 
 .btn {
   transition: 0.4s ease-in-out;
+  // color: white;
+  // border: 1px solid white;
+  // background-color: rgba(0,0,0,0.3);
 }
 
 .title {
@@ -157,7 +163,7 @@ select {
   font-family: 'Cairo', sans-serif;
   color:aliceblue;
   // margin-left: 90vw;
-  margin-top: 3vh;
+  margin-top: 20vh;
   // rgb(221, 130, 130, 0.5), 
   padding-left: 30px;
   // margin-left: 45%;
@@ -166,4 +172,32 @@ select {
     color: white;
     text-shadow: 0 3px black, 0 5px black, 0 7px black;
   }
+}
+
+.review-page{
+  a{
+    padding: none;
+    text-decoration: none;
+  .list-link {
+    font-size: 15px;
+    padding: 5px 10px;
+    // color:rgb(0, 0, 0);
+    width: 100px;
+    color: white;
+    border: 1px solid white;
+    background-color: rgba(0,0,0,0.3);
+        // height: 150px;
+        // background-color: rgb(221, 130, 130, 0.5);
+    // background-color: white;
+    border-radius: 10px;
+    transition: 0.4s ease-in-out;
+    // text-decoration: none;
+    &:hover {
+      transform: scale(1.1);
+      // color: white;
+      // border: 1px solid white;
+      // background-color: rgba(0,0,0,0.3);
+        }
+  }
+}
 }

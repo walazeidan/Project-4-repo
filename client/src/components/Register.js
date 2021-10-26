@@ -76,12 +76,12 @@ const Register = () => {
                   <div className="form-field">
                     <label htmlFor="first_name">First Name</label>
                     <input onInput={handleChange} type="text" name="first_name" placeholder="First Name" value={formData.first_name} />
-                    {errors.first_name && <p className="error">{errors.first_name.message}</p>}
+                    {errors.first_name && <p className="error">{errors.first_name}</p>}
                   </div>
                   <div className="form-field">
                     <label htmlFor="last_name">Last Name</label>
                     <input onInput={handleChange} type="text" name="last_name" placeholder="Last Name" value={formData.last_name} />
-                    {errors.last_name && <p className="error">{errors.last_name.message}</p>}
+                    {errors.last_name && <p className="error">{errors.last_name}</p>}
                   </div>
                   <div className="form-field">
                     <label htmlFor="username">UserName</label>

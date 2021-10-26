@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react'
 
-const Search = ({ titles, setFilteredTitles, filters, setFilters }) => {
+const Search = ({ titles, setFilteredTitles, filters, setFilters, handleFilters }) => {
 
   const handleFilterChange = (event) => {
     const newObj = { ...filters, [event.target.name]: event.target.value }
@@ -8,15 +8,18 @@ const Search = ({ titles, setFilteredTitles, filters, setFilters }) => {
     setFilters(newObj)
   }
 
-  const handleGenres = (e) => {
-    const filteredArray = titles.filter(country => country.region === e.target.value)
-    console.log(setFilteredTitles(filteredArray))
-  }
+
+  // const handleFilters = (e) => {
+  //   const filteredGenres = titles.map(t => t.genres.map(g => g.name === e.target.value))
+  //   console.log(setFilteredTitles(filteredGenres))
+  // }
+
+  // const Filters = ({ })
 
   return (
     <>
       <input onChange={handleFilterChange} name="searchTerm" value={filters.searchTerm} className="search" placeholder="🔎 Search Titles"/>
-      <select onChange={handleGenres} value={filters.genres} className='sort'>
+      <select onChange={handleFilters} className='sort'>
         <option value="all" defaultValue>All</option>
         <option value="Thriller">Thriller</option>
         <option value="Coming-of-Age">Coming-of-Age</option>

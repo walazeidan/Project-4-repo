@@ -1,7 +1,25 @@
+.rn {
+  background-color:rgba(0,0,0,0.8)
+}
+
+.all-titles {
+  background-color:rgba(128, 119, 119, 0.2);
+  max-width: 75%;
+  margin: 0 auto;
+  border-radius: 10px;
+  // box-shadow:
+  // 0 0 60px 30px #fff,  /* inner white */
+  // 0 0 100px 60px #f0f, /* middle magenta */
+  // 0 0 140px 90px #0ff; /* outer cyan */
+}
+
+
+
 .titles-page {
   display: flex;
   flex-wrap: wrap;
   margin-top: 100px;
+  // background-color: grey;
 }
 
 .title-image {
@@ -9,15 +27,18 @@
   margin: 0 auto;
   border-radius: 10px;
   &:hover {
+    box-shadow:0 0 10px 10px rgb(128, 124, 124);  /* inner white */
+    
     // background-color: grey;
     // background-blend-mode: multiply;
-    box-shadow: 0px 2px 12px rgba(0 0 0 / 20%);
+    // box-shadow: 0px 2px 12px rgba(0 0 0 / 20%);
   }
 }
 
 .title-name {
-  margin: 10px auto;
-    color: black;
+  // margin: 10px auto;
+  color: black;
+  // margin-right: 10%;
 }
 
 .card {
@@ -26,9 +47,11 @@
   margin: 50px auto;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  align-items: center;
+  // justify-content: space-around;
   border-radius: 10px;
   transition: 0.4s ease-in-out;
+  // background-color: rgba(0,0,0,0.3);
   a {
     text-decoration: none;
   }
@@ -52,6 +75,8 @@
   width: 30vh;
   height: 35px;
   font-size: 20px;
+  // box-shadow:
+  // 0 0 5px 5px #fff,  /* inner white */
 }
 
 .sort {
