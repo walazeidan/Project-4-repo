@@ -1,14 +1,17 @@
 import React, { useState, useEffect } from 'react'
 import axios from 'axios'
 import { useParams, Link } from 'react-router-dom'
+import { getTokenFromLocalStorage, getPayload } from './Auth'
 
 
 const TitleCard = () => {
 
   const [ title, setTitle ] = useState([])
   const [ hasError, setHasError ] = useState(false)
+  const [ showMore, setShowMore ] = useState(false)
 
   const { id } = useParams()
+  const token = getTokenFromLocalStorage
 
   useEffect(() => {
     const getTitle = async () => {
@@ -40,18 +43,56 @@ const TitleCard = () => {
     titlesToRender = 'Loading....'
   }
 
+
+
+
+  const handleMoreClick = () => {
+    setShowMore(!showMore)
+  }
+
+  const handleDelete = async (e) => {
+    try {
+      await axios.delete(`/api/reviews/${e.target.name}`,{
+        headers: {
+          Authorization: `Bearer ${token}`,
+        },
+      })
+      window.location.reload(false)
+    } catch (err) {
+      console.log(err)
+    }
+  }
+
   let reviewsToRender
-
-
 
   if (title.reviews) {
     reviewsToRender = title.reviews.map((t, i) => {
-      // const spoiler = t.spoiler
+      // {t.spoilers?}
       return <div className="review-post" key={i}>
-        <p>Movie Rating {t.movie_rating}</p>
-        <p>Book Rating {t.book_rating}</p>
-        <p>Thoughts {t.text}</p>
-        <p>Differences between the two {t.differences}</p>
+        {t.spoilers === true ?
+          <>
+            <button onClick={(e) => handleMoreClick(e.target)}>
+              {showMore ? 'Hide' : 'This Review Contains Spoilers'}
+            </button>
+            {showMore &&
+            <>
+              <p>{t.movie_rating}</p>
+              <p>Book Rating {t.book_rating}</p>
+              <p>Thoughts {t.text}</p>
+              <p>Differences between the two {t.differences}</p>
+              <button className='delete-button' onClick={handleDelete} name={t._id}>❌</button>
+            </>
+            }
+          </>
+          :
+          <>
+            <p>Movie Rating {t.movie_rating}</p>
+            <p>Book Rating {t.book_rating}</p>
+            <p>Thoughts {t.text}</p>
+            <p>Differences between the two {t.differences}</p>
+            <button className='delete-button' onClick={handleDelete} name={t._id}>❌</button>
+          </>
+        }
       </div>
     })
   } else {
@@ -118,15 +159,9 @@ const TitleCard = () => {
               <h4 className='review-link'>Post a review!</h4>
             </Link>
           </div>
-          {/* {title.reviews.map(t => { */}
-          {/* {t.spoiler ? 
-            <h3>Hidden</h3>
-          
-            :
-            <div className="div review-box d-flex flex-wrap justify-content-center">
-              {reviewsToRender}
-            </div>
-          } */}
+          <div className="div review-box d-flex flex-wrap justify-content-center">
+            {reviewsToRender}
+          </div>
           {/* })} */}
         </div>
       </div>

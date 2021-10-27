@@ -1,12 +1,24 @@
-.register-page,
-.login-page {
-  // height: 100vh;
-  // background-image: url("../styles/assets/homebook.jpeg");
-  // background-color: grey;
-  // background-blend-mode: multiply;
+.review-wrapper,
+.register-wrapper,
+.login-wrapper {
+  background-color: rgba(0,0,0,0.5);
+  height: 100vh;
+  width: 100vw;
+  // background-size: 100% 100%;
+  // background-image: url("../styles/assets/homepic.jpeg");
+  // margin:0;
+  // // min-height: 100vh;
+  // position: relative;
+  // // background-color: grey;
+  // // background-blend-mode: multiply;
   // background-repeat: no-repeat;
-  // background-size: cover;
-  // height: inherit;
+  // // background-size: cover;
+  // object-fit: cover;
+  // // height: inherit;
+}
+
+.review-page {
+  margin-top: -5%;
 }
 
 .review-form {
@@ -22,10 +34,13 @@
   position: relative;
   top: 20%;
   form {
+    display: flex;
+    justify-content: space-between;
     background-color: rgb(0,0,0,0.5);
     color: white;
-    padding: 45px;
+    // padding: 45px;
     border-radius: 8px;
+    // height:30vh;
     // color: $fontcolor;
     transition: 0.4s ease-in-out;
     h3 {
@@ -66,7 +81,7 @@
     }
 
     p {
-      margin-top: 20px;
+      // margin-top: 20px;
       a {
         text-decoration: none;
         color: black;
@@ -106,20 +121,38 @@ button {
 
 .textarea {
   width: -webkit-fill-available;
-  height: 20vh;
+  height: 10vh;
   border: none;
   border-radius: 10px;
+  margin:2%;
   // background-color: $fontcolor;
-  color: rgb(193, 129, 11);
+  // color: rgb(193, 129, 11);
 }
 
 select {
+  // .title-select{
+  //   width: 40vw;
+  //   height: 2vh;
+  // }
   color: rgb(3, 6, 7);
   border-radius: 10px;
   width: 10vh;
   text-align: center;
   border: none;
+  margin:1%;
+  // width: 40vw;
+  // height: 2vh;
   // background-color: $fontcolor;
+}
+
+.title-select{
+  width: 20vw;
+  height: 2vh;
+}
+
+.checkbox {
+    width: 2vw;
+    height: 2vh;
 }
 
 .review-label {
@@ -128,16 +161,17 @@ select {
   }
   p {
     text-align: center;
-    margin-top: 0;
+    // margin-top: 0;
   }
 }
 
-.form-page form p {
-  margin-top: 0;
-}
+// .form-page form p {
+//   margin-top: 0;
+// }
 
 .no-account {
-  margin: 0;
+  // margin: 0;
+  // margin-top: 50%;
   a {
     &:hover {
       text-decoration: none;
@@ -162,8 +196,10 @@ select {
   justify-content: center;
   font-family: 'Cairo', sans-serif;
   color:aliceblue;
+  width: 188px;
+  margin: 0 auto;
   // margin-left: 90vw;
-  margin-top: 20vh;
+  // margin-top: 20vh;
   // rgb(221, 130, 130, 0.5), 
   padding-left: 30px;
   // margin-left: 45%;
@@ -174,12 +210,26 @@ select {
   }
 }
 
+.logout {
+  color: white;
+  cursor: pointer;
+  padding: 5px;
+  font-size:30px;
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
 .review-page{
   a{
     padding: none;
     text-decoration: none;
+    display: flex;
+    justify-content: end;
+    margin-right:2%;
+    // width:200px;
   .list-link {
-    font-size: 15px;
+    font-size: 18px;
     padding: 5px 10px;
     // color:rgb(0, 0, 0);
     width: 100px;

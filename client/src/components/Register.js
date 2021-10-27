@@ -52,7 +52,7 @@ const Register = () => {
 
   return (
     <>
-      <div className="site-wrapper">
+      <div className="register-wrapper">
         <div className="title">
           <div className="b">R</div>
           <div className="o">E</div>

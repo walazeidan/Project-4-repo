@@ -3,6 +3,7 @@ import axios from 'axios'
 import Search from './Search'
 import LoadMore from './LoadMore'
 import { Link } from 'react-router-dom'
+import { userIsAuthenticated } from './Auth'
 
 
 
@@ -39,8 +40,8 @@ const List = ({ showMore, LoadMoreButton }) => {
   }, [setFilteredTitles, filters, titles])
 
   const handleFilters = (e) => {
-    setFilteredTitles(titles.map(t => t.genres.map(g => g.name === e.target.value)))
-    // console.log(setFilteredTitles(filteredGenres))
+    const filteredGenres = titles.map(t => t.genres.map(g => g.name === e.target.value))
+    console.log(setFilteredTitles(filteredGenres))
   }
 
 
@@ -57,10 +58,17 @@ const List = ({ showMore, LoadMoreButton }) => {
               <>
                 <>
                   <div className='card col-lg-3 mb-4 col-md-6'>
-                    <Link to={`/adaptations/${title.id}/`}>
-                      <h4 className="title-name" value={title.name}>{title.name}</h4>
-                      <img className="title-image" src={title.book_image}></img>
-                    </Link>
+                    {userIsAuthenticated() ?
+                      <Link to={`/adaptations/${title.id}/`}>
+                        <h4 className="title-name" value={title.name}>{title.name}</h4>
+                        <img className="title-image" src={title.book_image}></img>
+                      </Link>
+                      :
+                      <Link to={'/login'}>
+                        <h4 className="title-name" value={title.name}>{title.name}</h4>
+                        <img className="title-image" src={title.book_image}></img>
+                      </Link>
+                    }
                   </div>
                 </>
               </>

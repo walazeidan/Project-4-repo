@@ -33,7 +33,7 @@ const Login = () => {
 
   return (
     <>
-      <div className="site-wrapper">
+      <div className="login-wrapper">
         <div className="title">
           <div className="b">L</div>
           <div className="o">O</div>
