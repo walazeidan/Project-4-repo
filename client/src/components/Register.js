@@ -18,7 +18,7 @@ const Register = () => {
   })
 
   const [ errors, setErrors ] = useState({
-    email: '',
+    email: { message: '' },
     username: '',
     genres: [],
     first_name: '',

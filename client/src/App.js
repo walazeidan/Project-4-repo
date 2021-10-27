@@ -10,29 +10,31 @@ import ReviewForm from './components/ReviewForm'
 
 function App() {
   return (
-    <BrowserRouter>
-      <Navbar />
-      <Switch>
-        <Route exact path='/'>
-          <Home />
-        </Route>
-        <Route exact path='/adaptations'>
-          <List />
-        </Route>
-        <Route exact path='/adaptations/:id'>
-          <TitleCard />
-        </Route>
-        <Route exact path='/login'>
-          <Login />
-        </Route>
-        <Route exact path='/register'>
-          <Register />
-        </Route>
-        <Route exact path='/adaptations/:id/reviews'>
-          <ReviewForm />
-        </Route>
-      </Switch>
-    </BrowserRouter>
+    <>
+      <BrowserRouter>
+        <Navbar />
+        <Switch>
+          <Route exact path='/'>
+            <Home />
+          </Route>
+          <Route exact path='/adaptations'>
+            <List />
+          </Route>
+          <Route exact path='/adaptations/:id'>
+            <TitleCard />
+          </Route>
+          <Route exact path='/login'>
+            <Login />
+          </Route>
+          <Route exact path='/register'>
+            <Register />
+          </Route>
+          <Route exact path='/adaptations/:id/reviews'>
+            <ReviewForm />
+          </Route>
+        </Switch>
+      </BrowserRouter>
+    </>
   )
 }
 

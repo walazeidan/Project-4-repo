@@ -44,18 +44,18 @@ const List = ({ showMore, LoadMoreButton }) => {
   const handleFilters = (e) => {
     let handleTrue = []
     // map through titles eacj title we map through as well
-    const newFilter = titles.map(titl => {
-      let trueOrFale = []
+    const newFilter = titles.map(t => {
+      let trueOrFalse = []
       // genre if it matches e.target.value returns true or false
-      titl.genres.map(genr => {
-        if (genr.name === e.target.value) {
-          console.log(genr.name === e.target.value)
-          trueOrFale.push(genr.name === e.target.value)
+      t.genres.map(g => {
+        if (g.name === e.target.value) {
+          console.log(g.name === e.target.value)
+          trueOrFalse.push(g.name === e.target.value)
         }
       }),
       // spreads and adds that true value if 
-      handleTrue = [...handleTrue, trueOrFale]
-      trueOrFale = []
+      handleTrue = [...handleTrue, trueOrFalse]
+      trueOrFalse = []
       console.log(handleTrue, 'handle true')
     })
     console.log(newFilter, 'new one')
@@ -78,6 +78,17 @@ const List = ({ showMore, LoadMoreButton }) => {
   }
 
 
+  // const headings = (text) => {
+  //   if (e.target.value === 'All') {
+  //     return (
+  //       <div className="All">
+  //         <p>All</p>
+  //       </div>
+  //     )
+  //   }
+  // }
+
+
   return (
     <div className="rn">
       <div className="search-filter">
@@ -90,16 +101,16 @@ const List = ({ showMore, LoadMoreButton }) => {
             return (
               <>
                 <>
-                  <div className='card col-lg-3 mb-4 col-md-6'>
+                  <div className='card col-lg-3 mb-4 col-md-6' key={title.name}>
                     {userIsAuthenticated() ?
                       <Link to={`/adaptations/${title.id}/`}>
-                        <h4 className="title-name" value={title.name}>{title.name}</h4>
-                        <img className="title-image" src={title.book_image}></img>
+                        <h4 className="title-name" value={title.name} key={title.name}>{title.name}</h4>
+                        <img className="title-image" src={title.book_image} key={title.book_image}></img>
                       </Link>
                       :
                       <Link to={'/login'}>
-                        <h4 className="title-name" value={title.name}>{title.name}</h4>
-                        <img className="title-image" src={title.book_image}></img>
+                        <h4 className="title-name" value={title.name} key={title.name}>{title.name}</h4>
+                        <img className="title-image" src={title.book_image} key={title.book_image}></img>
                       </Link>
                     }
                   </div>
