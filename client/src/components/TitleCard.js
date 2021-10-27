@@ -11,7 +11,7 @@ const TitleCard = () => {
   const [ showMore, setShowMore ] = useState(false)
 
   const { id } = useParams()
-  const token = getTokenFromLocalStorage
+  const token = getTokenFromLocalStorage()
 
   useEffect(() => {
     const getTitle = async () => {
@@ -50,14 +50,14 @@ const TitleCard = () => {
     setShowMore(!showMore)
   }
 
-  const handleDelete = async (e) => {
+  const handleDelete = async () => {
     try {
-      await axios.delete(`/api/reviews/${e.target.name}`,{
+      await axios.delete(`/api/reviews/${id}`,{
         headers: {
           Authorization: `Bearer ${token}`,
         },
       })
-      window.location.reload(false)
+      // window.location.reload(false)
     } catch (err) {
       console.log(err)
     }

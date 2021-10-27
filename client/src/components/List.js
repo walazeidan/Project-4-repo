@@ -39,9 +39,42 @@ const List = ({ showMore, LoadMoreButton }) => {
     }))
   }, [setFilteredTitles, filters, titles])
 
+
+  
   const handleFilters = (e) => {
-    const filteredGenres = titles.map(t => t.genres.map(g => g.name === e.target.value))
-    console.log(setFilteredTitles(filteredGenres))
+    let handleTrue = []
+    // map through titles eacj title we map through as well
+    const newFilter = titles.map(titl => {
+      let trueOrFale = []
+      // genre if it matches e.target.value returns true or false
+      titl.genres.map(genr => {
+        if (genr.name === e.target.value) {
+          console.log(genr.name === e.target.value)
+          trueOrFale.push(genr.name === e.target.value)
+        }
+      }),
+      // spreads and adds that true value if 
+      handleTrue = [...handleTrue, trueOrFale]
+      trueOrFale = []
+      console.log(handleTrue, 'handle true')
+    })
+    console.log(newFilter, 'new one')
+    console.log(handleTrue, ' handle')
+    let filteredObjects = []
+    let counter = 0
+    // map through and checks whether it's true, if it is it pushes that movie into filtered objects. 
+    titles.map(movie => {
+      if (handleTrue[counter][0] === true) { 
+        filteredObjects.push(movie)
+      }
+      counter = counter += 1
+    })
+    // if it's all filtered objetcs is equal to all titles. 
+    if (e.target.value === 'all') { 
+      filteredObjects = titles
+    }
+    setFilteredTitles(filteredObjects)
+    console.log('filtered generes data', filteredObjects)
   }
 
 
