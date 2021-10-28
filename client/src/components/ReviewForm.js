@@ -51,7 +51,7 @@ const ReviewForm = () => {
       )
       history.push(`/adaptations/${id}/`)
     } catch (err) {
-      console.log(err)
+      console.log(err.response)
     }
   }
 
@@ -142,7 +142,7 @@ const ReviewForm = () => {
                       <h3>Did you prefer the book or the movie?</h3>
                     </div>
                     <div className="control">
-                      <select name="preference" onChange={handleChange} value={formData.preference}>
+                      <select name="preference" className="preference" onChange={handleChange} value={formData.preference}>
                         <option value="" disabled></option>
                         <option value="book">Book</option>
                         <option value="movie">Movie</option>

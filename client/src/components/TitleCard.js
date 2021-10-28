@@ -38,7 +38,7 @@ const TitleCard = () => {
 
   if (title.genres) {
     titlesToRender = title.genres.map((t, i) => {
-      return <li className="genre-list"key={i}>{t.name}</li>
+      return <li className="genre-list"key={i}><strong>{t.name}</strong></li>
     })
   } else {
     titlesToRender = 'Loading....'
@@ -65,6 +65,12 @@ const TitleCard = () => {
     }
   }
 
+  const userIsOwner = (ownerId) => {
+    const payload = getPayload()
+    if (!payload) return
+    return ownerId === payload.sub
+  }
+
   let reviewsToRender
 
   if (title.reviews) {
@@ -82,7 +88,9 @@ const TitleCard = () => {
               <p>Book or Movie? {t.preference}</p>
               <p>Thoughts {t.text}</p>
               <p>Differences between the two {t.differences}</p>
+              {userIsOwner(t.owner) && 
               <button className='delete-button' onClick={handleDelete} name={t.id}>DELETE</button>
+              }
             </>
             }
           </>
@@ -91,7 +99,9 @@ const TitleCard = () => {
             <p>Book or Movie? {t.preference}</p>
             <p>Thoughts {t.text}</p>
             <p>Differences between the two {t.differences}</p>
+            {userIsOwner(t.owner) && 
             <button className='delete-button' onClick={handleDelete} name={t.id}>DELETE</button>
+            }
           </>
         }
       </div>
@@ -135,6 +145,7 @@ const TitleCard = () => {
           <div className="movie-book-synopsis">
             <div className="movie-book">
               <div className="movie">
+                <h4>MOVIE</h4>
                 <img className="movie-image" src={title.movie_image} alt={title.movie_image} />
                 <h3>{title.director}</h3>
                 <p>{title.movie_release_year}</p>
@@ -147,6 +158,7 @@ const TitleCard = () => {
               {titlesToRender}
             </div> */}
               <div className="book">
+                <h4>BOOK</h4>
                 <img className="book-image" src={title.book_image} alt={title.book_image} />
                 <h3>{title.author}</h3>
                 <p>{title.book_release_year}</p>

@@ -9,21 +9,17 @@ const Register = () => {
   const [ formData, setFormData ] = useState({
     email: '',
     username: '',
-    genres: [],
     first_name: '',
     last_name: '',
-    profile_image: '',
     password: '',
     password_confirmation: '',
   })
 
   const [ errors, setErrors ] = useState({
-    email: { message: '' },
+    email: '',
     username: '',
-    genres: [],
     first_name: '',
     last_name: '',
-    profile_image: '',
     password: '',
     password_confirmation: '',
   })
@@ -39,10 +35,10 @@ const Register = () => {
       await axios.post('/api/auth/register/', formData)
       history.push('/login')
     } catch (err) {
-      console.log(err)
-      console.log('ERROR!', err.response.data.errors)
-      setErrors(err.response.data.errors)
-      console.log(errors) 
+      console.log(err.response)
+      console.log('ERROR!', err.response.data)
+      setErrors(err.response.data)
+      // console.log(errors) 
     }
   }
 
@@ -76,32 +72,32 @@ const Register = () => {
                   <div className="form-field">
                     <label htmlFor="first_name">First Name</label>
                     <input onInput={handleChange} type="text" name="first_name" placeholder="First Name" value={formData.first_name} />
-                    {errors.first_name && <p className="error">{errors.first_name}</p>}
+                    {errors.first_name && <p className="error">Please Enter Valid First Name</p>}
                   </div>
                   <div className="form-field">
                     <label htmlFor="last_name">Last Name</label>
                     <input onInput={handleChange} type="text" name="last_name" placeholder="Last Name" value={formData.last_name} />
-                    {errors.last_name && <p className="error">{errors.last_name}</p>}
+                    {errors.last_name && <p className="error">Please Enter Valid Last Name</p>}
                   </div>
                   <div className="form-field">
                     <label htmlFor="username">UserName</label>
                     <input onInput={handleChange} type="text" name="username" placeholder="First Name" value={formData.username} />
-                    {errors.username && <p className="error">{errors.username.message}</p>}
+                    {errors.username && <p className="error">Please Enter Valid Username</p>}
                   </div>
                   <div className="form-field">
                     <label htmlFor="email">Email</label>
                     <input onInput={handleChange} type="email" name="email" placeholder="Email" value={formData.email} />
-                    {errors.email && <p className="error">{errors.email.message}</p>}
+                    {errors.email && <p className="error">Please Enter Valid Email</p>}
                   </div>
                   <div className="form-field">
                     <label htmlFor="password">Password</label>
                     <input onInput={handleChange} type="password" name="password" placeholder="Password" value={formData.password} />
-                    {errors.password && <p className="error">{errors.password.message}</p>}
+                    {errors.password && <p className="error">Please Enter Valid Password</p>}
                   </div>
                   <div className="form-field">
                     <label htmlFor="password_confirmation">Password Confirmation</label>
                     <input onInput={handleChange} type="password" name="password_confirmation" placeholder="Password Confirmation" value={formData.password_confirmation} />
-                    {errors.password_confirmation && <p className="error">{errors.password_confirmation.message}</p>}
+                    {errors.password_confirmation && <p className="error">Password Confirmation Error</p>}
                   </div>
                   {/* <div className="form-field">
                   <ImageUpload

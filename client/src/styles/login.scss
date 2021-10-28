@@ -60,10 +60,15 @@
         font-size:20px;
       }
       input {
+        font-size: 16px;
         border-color: rgba(0 0 0 /0.16);
         width: 30%;
-        height: 2vh;
+        height: 3vh;
         margin: 10px auto;
+        background-color: rgba(0,0,0,0);
+        border: 1px solid white;
+        color: white;
+        padding-left:1.5%;
         // background-color: $fontcolor;
         // color: rgb(192, 235, 255);
         border-radius: 6px;
@@ -132,8 +137,17 @@ button {
   border: none;
   border-radius: 10px;
   margin:2%;
+  background-color: rgba(0,0,0,0);
+  border: 1px solid white;
+  color: white;
   // background-color: $fontcolor;
   // color: rgb(193, 129, 11);
+}
+
+.preference {
+  background-color: rgba(0,0,0,0);
+  border: 1px solid white;
+  color: white;
 }
 
 select {
@@ -155,6 +169,9 @@ select {
 .title-select{
   width: 20vw;
   height: 2vh;
+  background-color: rgba(0,0,0,0);
+  border: 1px solid white;
+  color: white;
 }
 
 .checkbox {
