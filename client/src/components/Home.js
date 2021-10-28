@@ -10,9 +10,9 @@ const Home = () => {
       {/* <Navbar /> */}
       {/* <div className="site-wrapper"> */}
       <div className="home-background">
-        <p>Think the movie didnt do the book justice? <br/>
-        or did the movie take the story to the next level? <br/>
-        Let us know and Find out what others thing!
+        <p className='home-about'>Think the movie didnt do the book justice? <br/>
+        Did the movie take the story to the next level? <br/>
+        Share your thoughts and Find out what others think!
         </p>
       </div>
       <div className='big-btn'>

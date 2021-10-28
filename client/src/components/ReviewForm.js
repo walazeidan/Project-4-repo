@@ -18,10 +18,10 @@ const ReviewForm = () => {
 
   const [ errors, setErrors ] = useState({
     title: '',
-    spoilers: false,
+    // spoilers: false,
     preference: '',
-    text: '',
-    differences: '',
+    // text: '',
+    // differences: '',
   })
 
   const { id } = useParams()
@@ -52,6 +52,7 @@ const ReviewForm = () => {
       history.push(`/adaptations/${id}/`)
     } catch (err) {
       console.log(err.response)
+      setErrors(err.response.data)
     }
   }
 
@@ -129,7 +130,7 @@ const ReviewForm = () => {
                         <option value="4">4</option>
                         <option value="5">5</option> */}
                       </select>
-                      
+                      {errors.title && <p className="error">Please Select a Title</p>}
                     </div>
                     {/* <label className="review-label"><h3>Your Review</h3></label> */}
                     <div className="select-checkbox">
@@ -140,6 +141,7 @@ const ReviewForm = () => {
                     </div>
                     <div className="select-book-rating">
                       <h3>Did you prefer the book or the movie?</h3>
+                      {errors.preference && <p className="error">Please Select a Preference</p>}
                     </div>
                     <div className="control">
                       <select name="preference" className="preference" onChange={handleChange} value={formData.preference}>

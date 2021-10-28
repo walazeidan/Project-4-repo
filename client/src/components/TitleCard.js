@@ -77,7 +77,7 @@ const TitleCard = () => {
     reviewsToRender = title.reviews.map((t, i) => {
       console.log(t.id)
       // {t.spoilers?}
-      return <div className="review-post" key={i}>
+      return <div className = 'review-box' key={i}>
         {t.spoilers === true ?
           <>
             <button onClick={(e) => handleMoreClick(e.target)}>
@@ -85,10 +85,11 @@ const TitleCard = () => {
             </button>
             {showMore &&
             <>
-              <p>Book or Movie? {t.preference}</p>
-              <p>Thoughts {t.text}</p>
-              <p>Differences between the two {t.differences}</p>
-              {userIsOwner(t.owner) && 
+              <p className='owner-review'>👤 {t.owner.username}</p>
+              <span className='key'>Book or Movie? <p>{t.preference}</p></span>
+              <span className='key'>Thoughts <p>{t.text}</p></span>
+              <span className='key'>Differences between the two <p>{t.differences}</p></span>
+              {userIsOwner(t.owner.id) && 
               <button className='delete-button' onClick={handleDelete} name={t.id}>DELETE</button>
               }
             </>
@@ -96,10 +97,12 @@ const TitleCard = () => {
           </>
           :
           <>
-            <p>Book or Movie? {t.preference}</p>
-            <p>Thoughts {t.text}</p>
-            <p>Differences between the two {t.differences}</p>
-            {userIsOwner(t.owner) && 
+            <p className='owner-review'>👤 {t.owner.username}</p>
+            <span className='key'>Book or Movie? <p>{t.preference}</p></span>
+
+            <span className='key'>Thoughts <p>{t.text}</p></span>
+            <span className='key'>Differences between the two <p>{t.differences}</p></span>
+            {userIsOwner(t.owner.id) && 
             <button className='delete-button' onClick={handleDelete} name={t.id}>DELETE</button>
             }
           </>
@@ -173,10 +176,10 @@ const TitleCard = () => {
             </div>
             <div className="review-link-div">
               <Link to={`/adaptations/${title.id}/reviews`}>
-                <h4 className='review-link'>Post a review!</h4>
+                <h4 className='review-link'>Post a review</h4>
               </Link>
             </div>
-            <div className="div review-box d-flex flex-wrap justify-content-center">
+            <div className="all-reviews d-flex flex-wrap justify-content-center">
               {reviewsToRender}
             </div>
             {/* })} */}
