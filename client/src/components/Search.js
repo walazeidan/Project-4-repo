@@ -22,7 +22,7 @@ const Search = ({ titles, setFilteredTitles, filters, setFilters, handleFilters 
       <select onChange={handleFilters} className='sort'>
         <option value="all" defaultValue>All</option>
         <option value="Thriller">Thriller</option>
-        <option value="Coming-of-Age">Coming-of-Age</option>
+        <option value="Coming-Of-Age">Coming-of-Age</option>
         <option value="Romance">Romance</option>
         <option value="Comedy">Comedy</option>
         <option value="Mystery">Mystery</option>
@@ -33,7 +33,7 @@ const Search = ({ titles, setFilteredTitles, filters, setFilters, handleFilters 
         <option value="Dystopia">Dystopia</option>
         <option value="Biography">Biography</option>
         <option value="Psychological Thriller">Psychological Thriller</option>
-        <option value="Fantasy">Fantasy</option>
+        {/* <option value="Fantasy">Fantasy</option> */}
       </select>
     </>
   )

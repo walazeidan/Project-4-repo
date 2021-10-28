@@ -228,13 +228,14 @@ select {
   }
 }
 
+.title-card,
 .review-page{
   a{
     padding: none;
     text-decoration: none;
     display: flex;
-    justify-content: end;
-    margin-right:2%;
+    justify-content: center;
+    margin-right:50%;
     // width:200px;
   .list-link {
     font-size: 18px;
@@ -258,4 +259,8 @@ select {
         }
   }
 }
+}
+
+.review-post {
+  font-size: 20px;
 }

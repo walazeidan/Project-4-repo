@@ -1,0 +1,22 @@
+footer{
+  color: rgb(193, 192, 192);
+  padding: 0px;
+  height: 2vh;
+  background-color: rgb(0,0,0,0);
+  margin-bottom: 0;
+  p{
+    // text-align: center;
+    margin-top:3vh;
+    a{
+      text-decoration: none;
+      color: rgb(193, 192, 192);
+      &:hover {
+        color: white;
+        cursor: pointer;
+      }
+    }
+  }
+  // hr{
+  //   margin: 0.5rem 0;
+  // }
+}

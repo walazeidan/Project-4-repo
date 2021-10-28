@@ -43,14 +43,17 @@ const List = ({ showMore, LoadMoreButton }) => {
   
   const handleFilters = (e) => {
     let handleTrue = []
-    // map through titles eacj title we map through as well
+    // map through titles each title we map through as well
     const newFilter = titles.map(t => {
       let trueOrFalse = []
       // genre if it matches e.target.value returns true or false
       t.genres.map(g => {
         if (g.name === e.target.value) {
+          // return <p>g.name</p>
           console.log(g.name === e.target.value)
           trueOrFalse.push(g.name === e.target.value)
+          console.log(e.target.value)
+          // return <p>{e.target.value}</p>
         }
       }),
       // spreads and adds that true value if 
@@ -73,6 +76,7 @@ const List = ({ showMore, LoadMoreButton }) => {
     if (e.target.value === 'all') { 
       filteredObjects = titles
     }
+    
     setFilteredTitles(filteredObjects)
     console.log('filtered generes data', filteredObjects)
   }
@@ -88,6 +92,12 @@ const List = ({ showMore, LoadMoreButton }) => {
   //   }
   // }
 
+  // const genreName = () => {
+  //   titles.map(t => {
+  //     t.map(g => g.name)
+  //   })
+  // }
+
 
   return (
     <div className="rn">
@@ -101,6 +111,7 @@ const List = ({ showMore, LoadMoreButton }) => {
             return (
               <>
                 <>
+                  {/* {genreName} */}
                   <div className='card col-lg-3 mb-4 col-md-6' key={title.name}>
                     {userIsAuthenticated() ?
                       <Link to={`/adaptations/${title.id}/`}>

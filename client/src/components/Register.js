@@ -103,29 +103,6 @@ const Register = () => {
                     <input onInput={handleChange} type="password" name="password_confirmation" placeholder="Password Confirmation" value={formData.password_confirmation} />
                     {errors.password_confirmation && <p className="error">{errors.password_confirmation.message}</p>}
                   </div>
-                  <div className="form-field">
-                    <label htmlFor="profile_image">Profile Picture</label>
-                    <input onInput={handleChange} type="text" name="profile_image" placeholder="Profile Picture" value={formData.profile_image} />
-                    {errors.profile_image && <p className="error">{errors.profile_image.message}</p>}
-                  </div>
-                  <div className="form-field">
-                    <select name="genres" onChange={handleChange} value={[2]}>
-                      <option value=" ">All</option>
-                      <option value="Thriller">Thriller</option>
-                      <option value="Coming-of-Age">Coming-of-Age</option>
-                      <option value="Romance">Romance</option>
-                      <option value="Comedy">Comedy</option>
-                      <option value="Mystery">Mystery</option>
-                      <option value="Historical Fiction">Historical Fiction</option>
-                      <option value="Horror">Horror</option>
-                      <option value="Drama">Drama</option>
-                      <option value="Crime">Crime</option>
-                      <option value="Dystopia">Dystopia</option>
-                      <option value="Biography">Biography</option>
-                      <option value="Psychological Thriller">Psychological Thriller</option>
-                      <option value="Fantasy">Fantasy</option>
-                    </select>
-                  </div>
                   {/* <div className="form-field">
                   <ImageUpload
                     value={formData.image}

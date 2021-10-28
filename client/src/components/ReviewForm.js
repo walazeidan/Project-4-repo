@@ -177,7 +177,7 @@ const ReviewForm = () => {
                           value={formData.text} />
                       </div>
                       <div className="differences">
-                        <h3>What differences did you notice between the book and the movie?</h3>
+                        <h3>What differences did you notice between the book and the movie? (optional)</h3>
                       </div>
                       <div className="control">
                         <textarea onInput={handleChange}

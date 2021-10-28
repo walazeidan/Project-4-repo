@@ -11,7 +11,7 @@ const TitleCard = () => {
   const [ showMore, setShowMore ] = useState(false)
 
   const { id } = useParams()
-  const token = getTokenFromLocalStorage()
+  // const token = getTokenFromLocalStorage()
 
   useEffect(() => {
     const getTitle = async () => {
@@ -30,7 +30,8 @@ const TitleCard = () => {
       }
     }
     getTitle()
-  }, [id, title])
+  // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [])
 
 
   let titlesToRender
@@ -50,16 +51,17 @@ const TitleCard = () => {
     setShowMore(!showMore)
   }
 
-  const handleDelete = async () => {
+  const handleDelete = async (e) => {
     try {
-      await axios.delete(`/api/reviews/${id}`,{
+      console.log('target name ->', e.target.name)
+      await axios.delete(`/api/reviews/${e.target.name}/`,{
         headers: {
-          Authorization: `Bearer ${token}`,
+          Authorization: `Bearer ${getTokenFromLocalStorage()}`,
         },
       })
-      // window.location.reload(false)
+      window.location.reload(false)
     } catch (err) {
-      console.log(err)
+      console.log('error ->',err)
     }
   }
 
@@ -67,6 +69,7 @@ const TitleCard = () => {
 
   if (title.reviews) {
     reviewsToRender = title.reviews.map((t, i) => {
+      console.log(t.id)
       // {t.spoilers?}
       return <div className="review-post" key={i}>
         {t.spoilers === true ?
@@ -80,7 +83,7 @@ const TitleCard = () => {
               <p>Book Rating {t.book_rating}</p>
               <p>Thoughts {t.text}</p>
               <p>Differences between the two {t.differences}</p>
-              <button className='delete-button' onClick={handleDelete} name={t._id}>❌</button>
+              <button className='delete-button' onClick={handleDelete} name={t.id}>DELETE</button>
             </>
             }
           </>
@@ -90,7 +93,7 @@ const TitleCard = () => {
             <p>Book Rating {t.book_rating}</p>
             <p>Thoughts {t.text}</p>
             <p>Differences between the two {t.differences}</p>
-            <button className='delete-button' onClick={handleDelete} name={t._id}>❌</button>
+            <button className='delete-button' onClick={handleDelete} name={t.id}>DELETE</button>
           </>
         }
       </div>
@@ -123,46 +126,51 @@ const TitleCard = () => {
 
   return (
     <>
-      <div className="title-card">
-        <div className="heading">
-          <h1 className="title-name">{title.name}</h1>
-        </div>
-        <div className="movie-book-synopsis">
-          <div className="movie-book">
-            <div className="movie">
-              <img className="movie-image" src={title.movie_image} alt={title.movie_image} />
-              <h3>{title.director}</h3>
-              <p>{title.movie_release_year}</p>
-              <a href={title.movie_link} rel="noreferrer" target="_blank">
-                <p className="learn-more-btn">Learn more</p>
-              </a>
-            </div>
-            {/* <div className="synopsis">
+      <div className="title-card-wrapper">
+        <Link to={'/adaptations/'}>
+          <h4 className='list-link'>Back to List</h4>
+        </Link>
+        <div className="title-card">
+          <div className="heading">
+            <h1 className="title-name">{title.name}</h1>
+          </div>
+          <div className="movie-book-synopsis">
+            <div className="movie-book">
+              <div className="movie">
+                <img className="movie-image" src={title.movie_image} alt={title.movie_image} />
+                <h3>{title.director}</h3>
+                <p>{title.movie_release_year}</p>
+                <a href={title.movie_link} className="movie-link" rel="noreferrer" target="_blank">
+                  <p className="learn-more-btn">Learn more</p>
+                </a>
+              </div>
+              {/* <div className="synopsis">
               <h3>{title.synopsis}</h3>
               {titlesToRender}
             </div> */}
-            <div className="book">
-              <img className="book-image" src={title.book_image} alt={title.book_image} />
-              <h3>{title.author}</h3>
-              <p>{title.book_release_year}</p>
-              <a href={title.book_link} rel="noreferrer" target="_blank">
-                <p className="learn-more-btn">Learn more</p>
-              </a>
+              <div className="book">
+                <img className="book-image" src={title.book_image} alt={title.book_image} />
+                <h3>{title.author}</h3>
+                <p>{title.book_release_year}</p>
+                <a href={title.book_link} className="movie-link" rel="noreferrer" target="_blank">
+                  <p className="learn-more-btn">Learn more</p>
+                </a>
+              </div>
             </div>
+            <div className="synopsis">
+              <h3>{title.synopsis}</h3>
+              {titlesToRender}
+            </div>
+            <div className="review-link-div">
+              <Link to={`/adaptations/${title.id}/reviews`}>
+                <h4 className='review-link'>Post a review!</h4>
+              </Link>
+            </div>
+            <div className="div review-box d-flex flex-wrap justify-content-center">
+              {reviewsToRender}
+            </div>
+            {/* })} */}
           </div>
-          <div className="synopsis">
-            <h3>{title.synopsis}</h3>
-            {titlesToRender}
-          </div>
-          <div className="review-link-div">
-            <Link to={`/adaptations/${title.id}/reviews`}>
-              <h4 className='review-link'>Post a review!</h4>
-            </Link>
-          </div>
-          <div className="div review-box d-flex flex-wrap justify-content-center">
-            {reviewsToRender}
-          </div>
-          {/* })} */}
         </div>
       </div>
     </>

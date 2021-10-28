@@ -7,6 +7,7 @@ import TitleCard from './components/TitleCard'
 import Login from './components/Login'
 import Register from './components/Register'
 import ReviewForm from './components/ReviewForm'
+import Footer from './components/Footer'
 
 function App() {
   return (
