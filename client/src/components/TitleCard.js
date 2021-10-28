@@ -79,8 +79,7 @@ const TitleCard = () => {
             </button>
             {showMore &&
             <>
-              <p>{t.movie_rating}</p>
-              <p>Book Rating {t.book_rating}</p>
+              <p>Book or Movie? {t.preference}</p>
               <p>Thoughts {t.text}</p>
               <p>Differences between the two {t.differences}</p>
               <button className='delete-button' onClick={handleDelete} name={t.id}>DELETE</button>
@@ -89,8 +88,7 @@ const TitleCard = () => {
           </>
           :
           <>
-            <p>Movie Rating {t.movie_rating}</p>
-            <p>Book Rating {t.book_rating}</p>
+            <p>Book or Movie? {t.preference}</p>
             <p>Thoughts {t.text}</p>
             <p>Differences between the two {t.differences}</p>
             <button className='delete-button' onClick={handleDelete} name={t.id}>DELETE</button>

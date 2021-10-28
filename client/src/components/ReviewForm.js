@@ -11,8 +11,7 @@ const ReviewForm = () => {
   const [ formData, setFormData ] = useState({
     title: '',
     spoilers: false,
-    book_rating: '',
-    movie_rating: '',
+    preference: '',
     text: '',
     differences: '',
   })
@@ -20,8 +19,7 @@ const ReviewForm = () => {
   const [ errors, setErrors ] = useState({
     title: '',
     spoilers: false,
-    book_rating: '',
-    movie_rating: '',
+    preference: '',
     text: '',
     differences: '',
   })
@@ -141,14 +139,14 @@ const ReviewForm = () => {
                       <input name="spoilers" type='checkbox' className="checkbox" onChange={handleChange} value={formData.spoiler} />
                     </div>
                     <div className="select-book-rating">
-                      <h3>What would you rate the book?</h3>
+                      <h3>Did you prefer the book or the movie?</h3>
                     </div>
                     <div className="control">
-                      <select name="book_rating" onChange={handleChange} value={formData.book_rating}>
+                      <select name="preference" onChange={handleChange} value={formData.preference}>
                         <option value="" disabled></option>
-                        <option value="1">1</option>
-                        <option value="2">2</option>
-                        <option value="3">3</option>
+                        <option value="book">Book</option>
+                        <option value="movie">Movie</option>
+                        {/* <option value="3">3</option>
                         <option value="4">4</option>
                         <option value="5">5</option>
                       </select>
@@ -163,7 +161,7 @@ const ReviewForm = () => {
                         <option value="2">2</option>
                         <option value="3">3</option>
                         <option value="4">4</option>
-                        <option value="5">5</option>
+                        <option value="5">5</option> */}
                       </select>
                     </div>
                     <div className="review-thoughts">

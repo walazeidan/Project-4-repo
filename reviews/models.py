@@ -8,8 +8,7 @@ from django.db.models.fields import DateTimeField
 
 class Review(models.Model):
     spoilers = models.BooleanField(default=False)
-    book_rating = models.IntegerField(validators = [MinValueValidator(1), MaxValueValidator(5)])
-    movie_rating = models.IntegerField(validators = [MinValueValidator(1), MaxValueValidator(5)])
+    preference = models.CharField(max_length=30, blank=True)
     text = models.TextField(max_length=300, blank=True)
     differences = models.TextField(max_length=300, blank=True)
     created_at = models.DateTimeField(auto_now_add=True, blank=True)
