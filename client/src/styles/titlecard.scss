@@ -96,6 +96,7 @@
   }
   p {
     font-size: 20px;
+    text-align: center;
   }
   h3 {
     // text-align: center;
@@ -187,6 +188,8 @@
 .all-reviews {
   display: flex;
   flex-direction: row;
+  justify-content: center;
+  width: calc(30% - 5px);
 }
 
   .review-box {
@@ -206,6 +209,7 @@
     color: black;
     p {
       color: white;
+      padding:2%;
     }
   }
   .owner-review {

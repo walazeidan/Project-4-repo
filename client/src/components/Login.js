@@ -61,12 +61,12 @@ const Login = () => {
                   <div className="form-field">
                     <label htmlFor="email">Email</label>
                     <input onChange={handleChange} type="email" name="email" placeholder="Email" />
-                    {errors.email && <p className="error">Enter Valid Email</p>}
+                    {/* {errors && <p className="error">Incorrect Email</p>} */}
                   </div>
                   <div className="form-field">
                     <label htmlFor="password">Password</label>
                     <input onChange={handleChange} type="password" name="password" placeholder="Password" />
-                    {errors.password && <p className="error">Incorrect Password</p>}
+                    {/* {errors && <p className="error">Incorrect Password</p>} */}
                   </div>
                   <button className="btn btn-yellow w-100">Login</button>
                   <p className="no-account">Don&apos;t have an Account?<Link to="/register"><span> Click Here</span></Link></p>

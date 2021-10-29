@@ -87,8 +87,8 @@ const TitleCard = () => {
             <>
               <p className='owner-review'>👤 {t.owner.username}</p>
               <span className='key'>Book or Movie? <p>{t.preference}</p></span>
-              <span className='key'>Thoughts <p>{t.text}</p></span>
-              <span className='key'>Differences between the two <p>{t.differences}</p></span>
+              <span className='key'><p>{t.text}</p></span>
+              <span className='key'><p>{t.differences}</p></span>
               {userIsOwner(t.owner.id) && 
               <button className='delete-button' onClick={handleDelete} name={t.id}>DELETE</button>
               }
@@ -100,8 +100,8 @@ const TitleCard = () => {
             <p className='owner-review'>👤 {t.owner.username}</p>
             <span className='key'>Book or Movie? <p>{t.preference}</p></span>
 
-            <span className='key'>Thoughts <p>{t.text}</p></span>
-            <span className='key'>Differences between the two <p>{t.differences}</p></span>
+            <span className='key'><p>{t.text}</p></span>
+            <span className='key'><p>{t.differences}</p></span>
             {userIsOwner(t.owner.id) && 
             <button className='delete-button' onClick={handleDelete} name={t.id}>DELETE</button>
             }
