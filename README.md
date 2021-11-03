@@ -242,8 +242,6 @@ My final days were spent on the design. I knew I wanted a hamburger navigation b
 
 <img width="642" alt="Screenshot 2021-11-03 at 14 20 45" src="https://user-images.githubusercontent.com/87997491/140078085-532084a7-6a44-44a2-b30c-2258dbe15e5e.png">
 
-<img width="916" alt="Screenshot 2021-11-03 at 14 22 18" src="https://user-images.githubusercontent.com/87997491/140078364-336d9ac8-4a33-4114-8531-49f8e8c391c4.png">
-
 # Wins and Challenges
 
 * The biggest win was making a functional fullstack app using python on the backend.
