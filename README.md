@@ -6,16 +6,16 @@ Explore here.
 <img width="1440" alt="Screenshot 2021-11-03 at 13 56 51" src="https://user-images.githubusercontent.com/87997491/140073504-c22dc0f1-2bd3-4fad-99c6-b0261e0d25f8.png">
 
 # Code Installation
-* Install back-end dependencies: _pipenv_
-* Enter Shell for project: _pipenv shell_
-* Make Migrations: _python manage.py makemigrations_
-* Migrate: _python manage.py migrate_
-* Load Seed data for genres: _python manage.py loaddata genres/seeds.json_
-* Load Seed data for titles: _python manage.py loaddata adaptations/seeds.json_
-* Start back-end server: _python manage.py runserver_
-* Change into front-end directory: _cd client_
-* Install front-end dependencies: _yarn_
-* Start front-end server: _yarn start_
+* Install back-end dependencies: __pipenv__
+* Enter Shell for project: __pipenv shell__
+* Make Migrations: __python manage.py makemigrations__
+* Migrate: __python manage.py migrate__
+* Load Seed data for genres: __python manage.py loaddata genres/seeds.json__
+* Load Seed data for titles: __python manage.py loaddata adaptations/seeds.json__
+* Start back-end server: __python manage.py runserver__
+* Change into front-end directory: __cd client__
+* Install front-end dependencies: __yarn__
+* Start front-end server: __yarn start__
 
 # Goal
 * Build a full stack application with a React front-end and a Django back-end
