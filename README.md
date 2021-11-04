@@ -259,7 +259,7 @@ My final days were spent on the design. I knew I wanted a hamburger navigation b
 * A recommended-for-you function that presents users with titles they might enjoy. This would be informed by a key in registration where users can state the genres they prefer.
 
 # Key Learning
-Working alone definitely has its pros and cons. I missed out on the collaborative experience of working with a team - bouncing ideas off each other, etc. I also didn’t get to create as ambitious a project as I would’ve liked to. On the flip side I'm happy that I decided to trust my ability to build a full-stack app on my own, as all the challenges I faced and was able to overcome in this project helped boost my confidence as a developer.
+Working alone definitely has its pros and cons. I missed out on the collaborative experience of working with a team - bouncing ideas off each other, etc. I also didn’t get to create as ambitious a project as I would’ve liked to. However, I'm glad that I decided to trust my ability to build a full-stack app on my own, as all the challenges I faced and was able to overcome in this project helped boost my confidence as a developer.
 
 
 
