@@ -244,7 +244,7 @@ My final days were spent on the design. I knew I wanted a hamburger navigation b
 
 # Wins and Challenges
 
-* The biggest win was making a functional fullstack app using python on the backend.
+* The biggest win was making a functional fullstack app using Python on the backend.
 * I’m delighted with the spoiler feature as this was something I’d never done before.
 * I think the styling is very slick but also playful!
 * I would’ve liked to style the reviews better but I didn’t have enough time!
