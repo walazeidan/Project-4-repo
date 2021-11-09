@@ -18,10 +18,10 @@ Explore here.
 * Start front-end server: __yarn start__
 
 # Goal
-* Build a full stack application with a React front-end and a Django back-end
-* Build a fully functional RESTful api with all CRUD routes (GET, POST, PUT, DELETE)
-* Use at least one OneToMany & one ManyToMany relationship
-* Custom authentication (register/login) 
+* Build a full stack application with a React front-end and a Django back-end.
+* Build a fully functional RESTful api with all CRUD routes (GET, POST, PUT, DELETE).
+* Use at least one OneToMany & one ManyToMany relationship.
+* Custom authentication (register/login).
 * __Timeline__: 10 days.
 
 # Technology Used
