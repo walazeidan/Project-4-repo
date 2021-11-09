@@ -1,5 +1,5 @@
 # The Hollywood Effect
-My final project as part of General Assembly’s Software Engineering Immersive Bootcamp, a complex full-stack application built with Django REST Framework and React. This was my first time building an application using python/django as the backend. I decided to make an application that displays movie adaptations of books, the user is able to login and post reviews where they decide whether the movie or the book is better.
+My final project as part of General Assembly’s Software Engineering Immersive Bootcamp, a complex full-stack application built with Django REST Framework and React. This was my first time building an application using Python/Django as the backend. I decided to go solo and make an application that displays movie adaptations of books, the user is able to login and post reviews where they decide whether the movie or the book is better.
 
 Explore here.
 
@@ -46,7 +46,7 @@ __Development tools:__
 * Insomnia
 * PostgreSQL
 * Git
-* Github
+* GitHub
 * Google Chrome dev tools
 * Trello Board (planning)
 
@@ -160,7 +160,7 @@ Once everything was mapped out I began building my search function, this was pre
     }))
   }, [setFilteredTitles, filters, titles])
 ```
-What proved to be more challenging was building the filter function that allowed users to filter by genre. Even though this was something that I’d done before, the data seemed to be slow to render this time which caused some bugs. After a couple of hours of playing around with it , I discovered that mapping through the genres and pushing them into a different array seemed to work. I’ve included some clearer elaboration in my code snippet.
+What proved to be more challenging was building the filter function that allowed users to filter by genre. Even though this was something that I’d done before, the data seemed to be slow to render this time which caused some bugs. After a couple of hours of playing around with it, I discovered that mapping through the genres and pushing them into a different array seemed to work. I’ve included some clearer elaboration in my code snippet.
 ```
 const handleFilters = (e) => {
     let handleTrue = []
