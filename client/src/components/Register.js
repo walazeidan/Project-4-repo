@@ -38,13 +38,9 @@ const Register = () => {
       console.log(err.response)
       console.log('ERROR!', err.response.data)
       setErrors(err.response.data)
-      // console.log(errors) 
     }
   }
 
-  // const handleImageUrl = (url) => {
-  //   setFormData({ ...formData, image: url })
-  // }
 
   return (
     <>
@@ -58,17 +54,14 @@ const Register = () => {
           <div className="e">T</div>
           <div className="o">E</div>
           <div className="u">R</div>
-          {/* <div className="y">Y</div> */}
           <div className="shadow"></div>
           <div className="shadow-two"></div>
-          {/* <h1>HoneyMoon</h1> */}
         </div>
         <div className="register-page">
           <div className="form-page">
             <div className="container">
               <div className="row">
                 <form onSubmit={handleSubmit} className="col-10 offset-1 mt-4 col-md-6 offset-md-3">
-                  {/* <h3>Register</h3> */}
                   <div className="form-field">
                     <label htmlFor="first_name">First Name</label>
                     <input onInput={handleChange} type="text" name="first_name" placeholder="First Name" value={formData.first_name} />
@@ -99,12 +92,6 @@ const Register = () => {
                     <input onInput={handleChange} type="password" name="password_confirmation" placeholder="Password Confirmation" value={formData.password_confirmation} />
                     {errors.password_confirmation && <p className="error">Password Confirmation Error</p>}
                   </div>
-                  {/* <div className="form-field">
-                  <ImageUpload
-                    value={formData.image}
-                    name='image'
-                    handleImageUrl={handleImageUrl} />
-                </div> */}
                   <button className="btn btn-yellow w-100">Register</button>
                 </form>
               </div>

@@ -47,26 +47,21 @@ const Login = () => {
           <div className="n">G</div>
           <div className="n">I</div>
           <div className="e">N</div>
-          {/* <div className="y">Y</div> */}
           <div className="shadow"></div>
           <div className="shadow-two"></div>
-          {/* <h1>HoneyMoon</h1> */}
         </div>
         <div className="login-page">
           <div className="form-page">
             <div className="container">
               <div className="row">
                 <form onSubmit={handleSubmit} className="col-10 offset-1 mt-4 col-md-6 offset-md-3">
-                  {/* <h3>Login</h3> */}
                   <div className="form-field">
                     <label htmlFor="email">Email</label>
                     <input onChange={handleChange} type="email" name="email" placeholder="Email" />
-                    {/* {errors && <p className="error">Incorrect Email</p>} */}
                   </div>
                   <div className="form-field">
                     <label htmlFor="password">Password</label>
                     <input onChange={handleChange} type="password" name="password" placeholder="Password" />
-                    {/* {errors && <p className="error">Incorrect Password</p>} */}
                   </div>
                   <button className="btn btn-yellow w-100">Login</button>
                   <p className="no-account">Don&apos;t have an Account?<Link to="/register"><span> Click Here</span></Link></p>

@@ -40,7 +40,6 @@ const Navbar = () => {
         <div className="e">T</div>
         <div className="shadow"></div>
         <div className="shadow-two"></div>
-        {/* <h1>HoneyMoon</h1> */}
       </div>
       <nav className={sidebar ? 'sidebar active' : 'sidebar'}>
         <button className="hamburger" type="button" onClick={showSidebar} />

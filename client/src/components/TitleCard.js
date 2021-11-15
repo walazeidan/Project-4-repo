@@ -11,20 +11,12 @@ const TitleCard = () => {
   const [ showMore, setShowMore ] = useState(false)
 
   const { id } = useParams()
-  // const token = getTokenFromLocalStorage()
 
   useEffect(() => {
     const getTitle = async () => {
       try {
         const { data } = await axios(`/api/adaptations/${id}`)
         setTitle(data)
-        // console.log('reviews', title.reviews.map(t => {
-        //   return t.text
-        // }))
-        // console.log('title', title.genres.name)
-        // title.genres.map(t => {
-        //   console.log(t.name)
-        // })
       } catch (err) {
         setHasError(true)
       }
@@ -76,7 +68,6 @@ const TitleCard = () => {
   if (title.reviews) {
     reviewsToRender = title.reviews.map((t, i) => {
       console.log(t.id)
-      // {t.spoilers?}
       return <div className = 'review-box' key={i}>
         {t.spoilers === true ?
           <>
@@ -113,27 +104,6 @@ const TitleCard = () => {
     reviewsToRender = 'Loading...'
   }
   
-  // {title.reviews ?
-  //   reviewsToRender = title.reviews.map((t,i) => {
-  //     return
-  //   })
-
-  // let spoilersToRender
-
-  // const spoilerCheck = (s) => {
-  //   if (title.reviews) {
-  //     spoilersToRender = title.reviews.map((t, i) => {
-  //       console.log(t)
-  //       s = t.spoilers
-  //     })
-  //   }
-  // }
-
-
-
-
-
-
 
   return (
     <>
@@ -156,10 +126,6 @@ const TitleCard = () => {
                   <p className="learn-more-btn">Learn more</p>
                 </a>
               </div>
-              {/* <div className="synopsis">
-              <h3>{title.synopsis}</h3>
-              {titlesToRender}
-            </div> */}
               <div className="book">
                 <h4>BOOK</h4>
                 <img className="book-image" src={title.book_image} alt={title.book_image} />
@@ -182,7 +148,6 @@ const TitleCard = () => {
             <div className="all-reviews d-flex flex-wrap justify-content-center">
               {reviewsToRender}
             </div>
-            {/* })} */}
           </div>
         </div>
       </div>

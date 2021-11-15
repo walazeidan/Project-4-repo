@@ -8,14 +8,6 @@ const Search = ({ titles, setFilteredTitles, filters, setFilters, handleFilters 
     setFilters(newObj)
   }
 
-
-  // const handleFilters = (e) => {
-  //   const filteredGenres = titles.map(t => t.genres.map(g => g.name === e.target.value))
-  //   console.log(setFilteredTitles(filteredGenres))
-  // }
-
-  // const Filters = ({ })
-
   return (
     <>
       <input onChange={handleFilterChange} name="searchTerm" value={filters.searchTerm} className="search" placeholder="🔎 Search Titles"/>
@@ -33,7 +25,6 @@ const Search = ({ titles, setFilteredTitles, filters, setFilters, handleFilters 
         <option value="Dystopia">Dystopia</option>
         <option value="Biography">Biography</option>
         <option value="Psychological Thriller">Psychological Thriller</option>
-        {/* <option value="Fantasy">Fantasy</option> */}
       </select>
     </>
   )

@@ -6,9 +6,6 @@ import Footer from './Footer'
 const Home = () => {
   return (
     <>
-    
-      {/* <Navbar /> */}
-      {/* <div className="site-wrapper"> */}
       <div className="home-background">
         <p className='home-about'>Think the movie didnt do the book justice? <br/>
         Did the movie take the story to the next level? <br/>
@@ -18,29 +15,6 @@ const Home = () => {
       <div className='big-btn'>
         <Link className="explore-btn" to="/adaptations"><span>Explore Titles</span> </Link>
       </div>
-      {/* <div className="upcoming-container">
-        <span className="upcoming-text">Read these upcoming adaptations</span> */}
-      {/* <div className="upcoming">
-          <a href='https://untappd.com/' rel="noreferrer" target="_blank">
-            <div className="dune">
-            </div>
-          </a>
-          <a href='https://untappd.com/' rel="noreferrer" target="_blank">
-            <div className="my-year-of-rest">
-            </div>
-          </a>
-          <a href='https://untappd.com/' rel="noreferrer" target="_blank">
-            <div className="crawdads">
-            </div>
-          </a>
-          <a href='https://untappd.com/' rel="noreferrer" target="_blank">
-            <div className="vampire">
-            </div>
-          </a>
-        </div> */}
-      {/* </div> */}
-      {/* </div> */}
-      {/* <Footer /> */}
     </>
   )
 }

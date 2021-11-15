@@ -1,7 +1,6 @@
 import React, { useEffect, useState } from 'react'
 import axios from 'axios'
 import Search from './Search'
-import LoadMore from './LoadMore'
 import { Link } from 'react-router-dom'
 import { userIsAuthenticated } from './Auth'
 
@@ -32,10 +31,7 @@ const List = ({ showMore, LoadMoreButton }) => {
   useEffect(() => {
     const regexSearch = new RegExp(filters.searchTerm, 'i')
     setFilteredTitles(titles.filter(title => {
-      // if (titles.genres) {
       return regexSearch.test(title.name) 
-      // && (title.genres.filter(name => name.includes(filters.genres)) || filters.type === 'All')
-      // }
     }))
   }, [setFilteredTitles, filters, titles])
 
@@ -81,24 +77,6 @@ const List = ({ showMore, LoadMoreButton }) => {
     console.log('filtered generes data', filteredObjects)
   }
 
-
-  // const headings = (text) => {
-  //   if (e.target.value === 'All') {
-  //     return (
-  //       <div className="All">
-  //         <p>All</p>
-  //       </div>
-  //     )
-  //   }
-  // }
-
-  // const genreName = () => {
-  //   titles.map(t => {
-  //     t.map(g => g.name)
-  //   })
-  // }
-
-
   return (
     <div className="rn">
       <div className="search-filter">
@@ -132,8 +110,6 @@ const List = ({ showMore, LoadMoreButton }) => {
           }
         </div>
       </div>
-      {/* {showMore && <button onClick={LoadMoreButton}> Load More </button>} */}
-      {/* <LoadMore /> */}
     </div>
   )
 }
