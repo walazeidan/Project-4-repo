@@ -1,7 +1,7 @@
 # The Hollywood Effect
 My final project as part of General Assembly’s Software Engineering Immersive Bootcamp, a complex full-stack application built with Django REST Framework and React. This was my first time building an application using Python/Django as the backend. I decided to go solo and make an application that displays movie adaptations of books, the user is able to login and post reviews where they decide whether the movie or the book is better.
 
-Explore here.
+Explore [here](https://the-hollywood-effect.herokuapp.com/).
 
 <img width="1440" alt="Screenshot 2021-11-03 at 13 56 51" src="https://user-images.githubusercontent.com/87997491/140073504-c22dc0f1-2bd3-4fad-99c6-b0261e0d25f8.png">
 
